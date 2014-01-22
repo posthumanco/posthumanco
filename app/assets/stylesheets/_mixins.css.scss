@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+
+$black: rgb(50, 50, 50);
+$lightblack: lighten($black, 10%);
+$white: rgb(255, 255, 255);
+$offwhite: rgb(245, 245, 245);
+$transparentwhite: rgba(255, 255, 255, .95);
+$transparentblack: rgba(0, 0, 0, .15);
+$grey: rgb(156, 161, 163);
+$lightgrey: lighten($grey, 30%);
+$darkgrey: darken($grey, 10%);
+$blue: rgb(79, 199, 255);
+$lightblue: lighten($blue, 30%);
+$darkblue: darken($blue, 10%);
+$red: rgb(255, 0, 0);
+$lightred: lighten($red, 30%);
+$darkred: darken($red, 10%);
+
+$pt-sans: 'PT Sans', sans-serif;
+$pt-serif: 'PT Serif', serif;
+
+$extra-small-font: 14px;
+$small-font: 18px;
+$medium-font: 32px;
+$large-font: 48px;
+$extra-large-font: 64px;
+
+$text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+$inset-text-shadow: 0px 1px 0px $white, 0px -1px 0px black;
+
+@mixin button-raised($color, $button-raised: 0 4px 0 0, $dropshadow: 0 5px 4px 0 rgba(0, 0, 0, .2)) {
+	box-shadow: $button-raised #{$color}, $dropshadow;
+		-webkit-box-shadow: $button-raised #{$color}, $dropshadow;
+		-moz-box-shadow: $button-raised #{$color}, $dropshadow;
+}
+
+@mixin button-lowered($color, $button-lowered: 0 2px 0 0, $dropshadow: 0 2px 3px 0 rgba(0, 0, 0, .2)) {
+	box-shadow: $button-lowered #{$color}, $dropshadow;
+		-webkit-box-shadow: $button-lowered #{$color}, $dropshadow;
+		-moz-box-shadow: $button-lowered #{$color}, $dropshadow;
+}
+
+@mixin button-pressed($color, $button-pressed: 0 1px 0 0, $dropshadow: 0 1px 1px 0 rgba(0, 0, 0, .1)) {
+	box-shadow: $button-pressed #{$color}, $dropshadow;
+		-webkit-box-shadow: $button-pressed #{$color}, $dropshadow;
+		-moz-box-shadow: $button-pressed #{$color}, $dropshadow;
+}
+
+@mixin radius($radius: 3px) {
+	border-radius: $radius;
+		-webkit-border-radius: $radius;
+		-moz-border-radius: $radius;
+}
+
+@mixin rotate-180($rotate: -180deg) {
+	transform: rotate($rotate);
+		-webkit-transform: rotate($rotate);
+		-moz-transform: rotate($rotate);
+		-ms-transform: rotate($rotate);
+}
+
+@mixin transition($transition: .5s) {
+	transition: color $transition, height $transition, transform $transition;
+		-webkit-transition: color $transition, height $transition, -webkit-transform $transition;
+		-moz-transition: color $transition, height $transition, -moz-transform $transition;
+}

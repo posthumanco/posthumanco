@@ -1,0 +1,27 @@
+<header id="header">
+	<i class="ph-arrow-down menu-toggle"></i>
+	<div class="row">
+		<div class="small-12 columns">
+			<nav>
+				<ul>
+					<li class="mobile-logo">{{#linkTo 'index'}}<i class="ph-posthuman_text"></i>{{/linkTo}}</li>
+					{{#if Posthuman.Auth.signedIn}}
+						<li>{{#linkTo 'new'}}New{{/linkTo}}</li>
+					{{/if}}
+					<li>{{#linkTo 'posts'}}Posts{{/linkTo}}</li>
+					<li>{{#linkTo 'tags'}}Tags{{/linkTo}}</li>
+					<li class="logo">{{#linkTo 'index'}}<i class="ph-posthuman_text"></i>{{/linkTo}}</li>
+					<li>{{#linkTo 'about'}}About{{/linkTo}}</li>
+					<li>{{#linkTo 'search'}}Search{{/linkTo}}</li>
+					{{#if Posthuman.Auth.signedIn}}
+					  <li>{{#linkTo 'logout'}}Logout{{/linkTo}}</li>
+					{{/if}}
+				</ul>
+			</nav>
+		</div><!-- end small-12 -->
+	</div><!-- end row -->
+</header>
+
+<div id="content">
+	{{outlet}}
+</div>

@@ -1,0 +1,25 @@
+<div class="row">
+	<div class="small-12 columns">
+		{{#each post in controller}}
+		  	<article>
+		  		<header>
+				  	<h1>{{#linkTo 'post' post}}{{post.title}}{{/linkTo}}</h1>
+				  	<p>{{post.author.full_name}} ({{format-date post.updated_at}})</p>
+				  	{{#if post.image}}
+				  		{{imgtag post.image}}
+				  	{{/if}}
+				</header>
+				<div class="row">
+					<div class="small-12 large-9 push-3 columns">
+				  		{{markdown post.body}}
+				  	</div><!-- end small-12 large-9 columns -->
+				  	<div class="small-12 large-3 pull-9 columns">
+						{{imgtag post.author.gravatar_url}}
+					</div><!-- end small-12 large-3 columns -->
+				</div><!-- end row -->
+			</article>
+	 	{{else}}
+	 		<h3>There are no posts.</h3>
+		{{/each}}
+	</div><!-- end small-12 columns -->
+</div><!-- end row -->
