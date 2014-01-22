@@ -1,0 +1,5 @@
+name: Posthuman
+markdown: redcarpet
+pygments: true
+paginate: 2
+paginate_path: "page:num"
