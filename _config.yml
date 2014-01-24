@@ -1,5 +1,9 @@
 name: Posthuman
+host: localhost
+port: 4000
+baseurl: /
 markdown: redcarpet
 pygments: true
-paginate: 2
+permalink: /:title
+paginate: 3
 paginate_path: "page:num"

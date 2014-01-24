@@ -27,7 +27,7 @@ $button-border-radius: 2px !default;
 		font-size: $button-font-size;
 		display: inline-block;
 		border-radius: $button-border-radius;
-		color: white;
+		color: white !important;
 		&:hover {
 			background: $primary-hover;
 		}
@@ -62,13 +62,13 @@ $button-border-radius: 2px !default;
 			color: $primary;
 		}
 		&:hover {
-			color: darken($primary, 10%);
+			color: $primary-hover;
 		}
 		@each $type in $button-type {
 			&.#{nth($type, 1)} {
 				color: #{nth($type, 2)};
 				&:hover {
-					background: #{nth($type, 3)};
+					color: #{nth($type, 3)};
 				}
 			}
 		}
@@ -133,7 +133,8 @@ $content-font-weight: 300 !default;
 			margin-bottom: .5em;
 			line-height: 1.2em;
 			small {
-				font-size: $h-font-size - ($i * 1.5);
+				font-size: $h-font-size - ($i * 1.6);
+				display: block;
 			}
 		}
 	}

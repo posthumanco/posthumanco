@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "This is an article title"
+title:  "This is a better article title"
 date:   2013-11-19 11:00:00
+tags: jokes
 ---
 
 Most of the time when we're caught up in work, it's easy to get focused on getting it done and finished so you can move onto the next project, or be done working in general. Granted, some people love their jobs, but who wouldn't enjoy a bit of extra time in the day to do something leisurely? If your idea of leisure is more work, wouldn't it be nice to get projects done sooner so you can move on to the next one (and maybe earn some more cash)?

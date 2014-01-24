@@ -10,7 +10,10 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/app.css">
         <!-- jQuery -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="{{ site.url }}/javascript/jquery-v2.0.3.min.js"></script>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     </head>
     <body>
       <div class="row full-width collapse nav text-center"><!--nav wrapper-->
@@ -21,7 +24,7 @@
               <ul>
                 <li class="mobile-logo"><a href="#"><i class="ph-posthuman_text"></i></a></li>
                 <li><a href="#">Posts</a></li>
-                <li><a href="tags.html">Tags</a></li>
+                <li><a href="{{ site.baseurl }}tags">Tags</a></li>
                 <li class="logo"><a href="/"><i class="ph-posthuman_text"></i></a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Search</a></li>
@@ -31,14 +34,14 @@
         </div>
       </div><!--end nav wrapper row-->
       <div class="row full-width collapse">
-        <div class="content">
-          {{ content }}
-        </div>
+        {{ content }}
       </div>
       <script type="text/javascript">
         $(document).ready(
           $('.menu-toggle').click(
-            $('#header').toggleClass('active');
+            function() {
+              $('#header').toggleClass('active')
+            }
           )
         )
       </script>

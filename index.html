@@ -3,19 +3,26 @@ layout: default
 title: Posthuman
 ---
 
-<div class="content">
+<div class="content index">
 	{% for post in paginator.posts %}
-		<div class="post">
-			<div class="row collapse banner">
-				<div class="small-12 columns">
-					<img src="{{ post.banner }}">
+		<article>
+			<!-- {% if post.banner != %}
+				<div class="row collapse banner">
+					<div class="small-12 columns">
+						<img src="{{ post.banner }}">
+					</div>
 				</div>
-			</div>
+			{% endif %} -->
 			<div class="small-11 small-centered medium-10 medium-centered large-6 large-centered columns">
-		  		<h2 class="h1"><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></h2>
-				{{ post.content }}
+		  		<header>
+		  			<h2 class="h1"><small><time pubdate="pubdate">{{ post.date | date_to_string }}</time></small><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		  		</header>
+				{{ post.excerpt }}
+				<footer>
+					<a href="{{ post.url }}" class="alert">Read More &raquo;</a>
+				</footer>
 		  	</div>
-	  	</div>
+	  	</article>
 	{% endfor %}
 	<div class="row">
 		<div class="small-11 small-centered medium-10 medium-centered large-6 large-centered columns">
@@ -24,16 +31,18 @@ title: Posthuman
 					<ul>
 					{% if paginator.previous_page %}
 						{% if paginator.previous_page == 1 %}
-						<li><a href="/">Newer</a></li>
+						<li><a href="/">&laquo; Newer</a></li>
 						{% else %}
-						<li><a href="/page{{ paginator.previous_page }}">Newer</a></li>
+						<li><a href="/page{{ paginator.previous_page }}">&laquo; Newer</a></li>
 						{% endif %}
 					{% else %}
 					{% endif %}
 					{% if paginator.page == 1 %}
-					<li><span class="active">1</span></li>
+						{% if paginator.page != paginator.total_pages %}
+							<li><span class="active">1</span></li>
+						{% endif %}
 					{% else %}
-					<li><a href="/">1</a></li>
+						<li><a href="/">1</a></li>
 					{% endif %}
 					{% for count in (2..paginator.total_pages) %}
 						{% if count == paginator.page %}
@@ -43,7 +52,7 @@ title: Posthuman
 						{% endif %}
 					{% endfor %}
 					{% if paginator.next_page %}
-					<li><a href="/page{{ paginator.next_page }}">Older</a></li>
+					<li><a href="/page{{ paginator.next_page }}">Older &raquo;</a></li>
 					{% else %}
 					{% endif %}
 					</ul>
