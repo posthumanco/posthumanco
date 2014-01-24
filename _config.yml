@@ -7,3 +7,5 @@ pygments: true
 permalink: /:title
 paginate: 3
 paginate_path: "page:num"
+
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
