@@ -188,8 +188,13 @@ body {
 	}
 }
 
+h1.tags {
+	text-transform: capitalize;
+}
+
 ul.tags {
 	margin: 0;
+	text-transform: capitalize;
 	li {
 		list-style-type: none;
 	}

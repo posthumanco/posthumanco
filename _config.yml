@@ -1,11 +1,12 @@
 name: Posthuman
-# host: localhost
-# port: 4000
-baseurl: /posthumanco
+host: localhost
+port: 4000
+baseurl: 
 markdown: redcarpet
 pygments: true
 permalink: /:title
 paginate: 3
 paginate_path: "page:num"
+safe: false
 
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
-<ul>{% for tag in site.tags %} 
-  <li><a href="/tag/{{ tag[0] }}">{{ tag[0] }}</a> <span>{{ tag[1].size }}</span></li>{% endfor %}
-</ul>
+<div class="small-11 small-centered medium-10 medium-centered large-6 large-centered columns">
+	<h1>Tags</h1>
+	<ul class="tags">
+		{% for tag in site.tags | sort:ascending %}<li><a href="/tag/{{ tag[0] }}">{{ tag[0] }}</a> <span> - {{ tag[1].size }}</span></li>{% endfor %}
+	</ul>
+</div>
