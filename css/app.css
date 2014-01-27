@@ -1089,8 +1089,12 @@ body {
       .pagination ul li:hover a {
         color: red; }
 
+h1.tags {
+  text-transform: capitalize; }
+
 ul.tags {
-  margin: 0; }
+  margin: 0;
+  text-transform: capitalize; }
   ul.tags li {
     list-style-type: none; }
 
