@@ -1,0 +1,36 @@
+body {
+  padding: 0 10%; }
+
+.ph-eye .ph-eyelid {
+  animation: blink 10s ease infinite;
+  -webkit-animation: blink 10s ease infinite;
+  -moz-animation: none;
+  -o-animation: blink 10s ease infinite;
+  transform-origin: 50%;
+  -webkit-transform-origin: 50%;
+  -moz-transform-origin: 50% 50% 0 !important;
+  -o-transform-origin: 50%; }
+.ph-eye .ph-gear {
+  animation: rotation 40s linear infinite;
+  -webkit-animation: rotation 40s linear infinite;
+  -moz-animation: none;
+  -o-animation: rotation 40s linear infinite;
+  transform-origin: 50%;
+  -webkit-transform-origin: 50%;
+  -moz-transform-origin: 50% 50% 0 !important;
+  -o-transform-origin: 50%; }
+  .ph-eye .ph-gear:hover {
+    fill: red; }
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@-webkit-keyframes blink {
+  0%, 98%, 100% {
+    -webkit-transform: scaleX(1) scaleY(1); }
+
+  99% {
+    -webkit-transform: scaleX(1.1) scaleY(0.01); } }
