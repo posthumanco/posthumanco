@@ -314,7 +314,7 @@ you can use the generic selector below, but it's slower:
 .row {
   width: auto;
   margin: 0 auto;
-  max-width: 100px; }
+  max-width: 1224px; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -725,7 +725,7 @@ you can use the generic selector below, but it's slower:
     margin-right: auto;
     float: none !important; } }
 button, a.button, input[type=submit] {
-  background: #4fc7ff;
+  background: #1a1a1a;
   border: none;
   padding: 0.5em;
   font-size: 1em;
@@ -733,7 +733,7 @@ button, a.button, input[type=submit] {
   border-radius: 2px;
   color: white !important; }
   button:hover, a.button:hover, input[type=submit]:hover {
-    background: #1cb7ff; }
+    background: #343434; }
   button.tiny, a.button.tiny, input[type=submit].tiny {
     padding: 0.5em;
     font-size: 0.7em; }
@@ -746,41 +746,41 @@ button, a.button, input[type=submit] {
   button.expand, a.button.expand, input[type=submit].expand {
     width: 100%; }
   button.primary, a.button.primary, input[type=submit].primary {
-    background: #4fc7ff; }
+    background: #1a1a1a; }
     button.primary:hover, a.button.primary:hover, input[type=submit].primary:hover {
-      background: #1cb7ff; }
+      background: #343434; }
   button.secondary, a.button.secondary, input[type=submit].secondary {
-    background: #9ca1a3; }
+    background: #00ed7a; }
     button.secondary:hover, a.button.secondary:hover, input[type=submit].secondary:hover {
-      background: #82888a; }
+      background: #00ba60; }
   button.disabled, a.button.disabled, input[type=submit].disabled {
-    background: #cccccc; }
+    background: #c8c7b8; }
     button.disabled:hover, a.button.disabled:hover, input[type=submit].disabled:hover {
-      background: #cccccc; }
+      background: #c4c2b2; }
   button.alert, a.button.alert, input[type=submit].alert {
     background: #ff362a; }
     button.alert:hover, a.button.alert:hover, input[type=submit].alert:hover {
       background: #f60e00; }
 
 a {
-  color: #4fc7ff;
+  color: #1a1a1a;
   text-decoration: none; }
   a:visited {
-    color: #4fc7ff; }
+    color: #1a1a1a; }
   a:hover {
-    color: #1cb7ff; }
+    color: #343434; }
   a.primary {
-    color: #4fc7ff; }
+    color: #1a1a1a; }
     a.primary:hover {
-      color: #1cb7ff; }
+      color: #343434; }
   a.secondary {
-    color: #9ca1a3; }
+    color: #00ed7a; }
     a.secondary:hover {
-      color: #82888a; }
+      color: #00ba60; }
   a.disabled {
-    color: #cccccc; }
+    color: #c8c7b8; }
     a.disabled:hover {
-      color: #cccccc; }
+      color: #c4c2b2; }
   a.alert {
     color: #ff362a; }
     a.alert:hover {
@@ -800,9 +800,9 @@ body {
       font-size: 22px; } }
 
 h1, .h1 {
-  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.8em;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 1em;
   margin-bottom: .5em;
   line-height: 1.2em; }
@@ -811,9 +811,9 @@ h1, .h1 {
     display: block; }
 
 h2, .h2 {
-  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.6em;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 1em;
   margin-bottom: .5em;
   line-height: 1.2em; }
@@ -822,9 +822,9 @@ h2, .h2 {
     display: block; }
 
 h3, .h3 {
-  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.4em;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 1em;
   margin-bottom: .5em;
   line-height: 1.2em; }
@@ -833,9 +833,9 @@ h3, .h3 {
     display: block; }
 
 h4, .h4 {
-  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.2em;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 1em;
   margin-bottom: .5em;
   line-height: 1.2em; }
@@ -844,9 +844,9 @@ h4, .h4 {
     display: block; }
 
 h5, .h5 {
-  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 1em;
   margin-bottom: .5em;
   line-height: 1.2em; }
@@ -855,9 +855,9 @@ h5, .h5 {
     display: block; }
 
 h6, .h6 {
-  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 0.8em;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 1em;
   margin-bottom: .5em;
   line-height: 1.2em; }
@@ -866,14 +866,14 @@ h6, .h6 {
     display: block; }
 
 p {
-  font-family: "Gentium Book Basic", Times, serif;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.61803;
   margin: 1.5em 0; }
 
 strong {
-  font-weight: 700; }
+  font-weight: 400; }
 
 ul, ul li ul, ol li ul {
   margin: 1.5em 0 1.5em 1em; }
@@ -931,7 +931,7 @@ code, .highlight, .pagination ul li {
 
 blockquote {
   padding-left: 10px;
-  border-left: 5px solid #cccccc; }
+  border-left: 5px solid #c8c7b8; }
 
 cite {
   font-style: italic;
@@ -948,42 +948,25 @@ nav ul li {
       display: inline-block; } }
 
 body {
-  background: whitesmoke url("/images/bg.png");
-  margin-top: 50px;
-  color: #323232; }
-  @media only screen and (min-width: 768px) {
-    body {
-      margin-top: 60px; } }
-  @media only screen and (min-width: 1024px) {
-    body {
-      margin-top: 75px; } }
+  color: #4d4d4d; }
   body a {
     transition: color 0.5s, height 0.5s, transform 0.5s;
     -webkit-transition: color 0.5s, height 0.5s, -webkit-transform 0.5s;
     -moz-transition: color 0.5s, height 0.5s, -moz-transform 0.5s; }
   body small {
-    color: #cccccc;
+    color: #c8c7b8;
     margin-bottom: -1em; }
   body header#header {
-    position: fixed;
     height: 50px;
-    padding: 15px 0;
+    padding: 5px 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: #1a1a1a;
     top: 0;
     z-index: 1000;
     overflow: hidden;
     transition: color 0.5s, height 0.5s, transform 0.5s;
     -webkit-transition: color 0.5s, height 0.5s, -webkit-transform 0.5s;
     -moz-transition: color 0.5s, height 0.5s, -moz-transform 0.5s; }
-    @media only screen and (min-width: 768px) {
-      body header#header {
-        height: 60px;
-        padding: 12px 0; } }
-    @media only screen and (min-width: 1024px) {
-      body header#header {
-        height: 75px;
-        padding: 13px 0; } }
     body header#header.active {
       transition: color 0.5s, height 0.5s, transform 0.5s;
       -webkit-transition: color 0.5s, height 0.5s, -webkit-transform 0.5s;
@@ -995,6 +978,7 @@ body {
         body header#header.active {
           height: inherit; } }
     body header#header .ph-arrow-down {
+      color: white;
       position: fixed;
       top: 16px;
       right: 26px;
@@ -1008,24 +992,18 @@ body {
         margin: 0 1em;
         vertical-align: middle; }
         body header#header nav ul li a {
-          color: #ff362a;
-          font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          color: white;
+          font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
           text-transform: uppercase; }
-          @media only screen and (min-width: 768px) {
-            body header#header nav ul li a {
-              font-size: 1em; } }
-          @media only screen and (min-width: 1024px) {
-            body header#header nav ul li a {
-              font-size: .8em; } }
           body header#header nav ul li a:hover {
-            color: #4fc7ff; }
+            color: #1a1a1a; }
         body header#header nav ul li.mobile-logo {
-          margin-bottom: 10px !important; }
+          margin: 0px 0px 10px 0px !important; }
           @media only screen and (min-width: 768px), only screen and (min-width: 1024px) {
             body header#header nav ul li.mobile-logo {
               display: none; } }
           body header#header nav ul li.mobile-logo a {
-            color: #323232;
+            color: white;
             font-size: 1em; }
             body header#header nav ul li.mobile-logo a:hover {
               color: #9ca1a3; }
@@ -1035,13 +1013,8 @@ body {
             body header#header nav ul li.logo {
               display: inline-block; } }
           body header#header nav ul li.logo a {
-            color: #323232; }
-            @media only screen and (min-width: 768px) {
-              body header#header nav ul li.logo a {
-                font-size: 1.3em; } }
-            @media only screen and (min-width: 1024px) {
-              body header#header nav ul li.logo a {
-                font-size: 1.4em; } }
+            color: white;
+            font-size: 1em; }
             body header#header nav ul li.logo a:hover {
               color: #9ca1a3; }
   body .content article {
@@ -1080,7 +1053,7 @@ body {
 
 .pagination {
   vertical-align: middle;
-  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
   .pagination ul {
     margin-left: 0; }
     .pagination ul li {

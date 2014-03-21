@@ -4,15 +4,14 @@
 		-moz-transition: color $duration, height $duration, -moz-transform $duration;
 }
 body {
-	background: whitesmoke url('/images/bg.png');
-	margin-top: 50px;
-	color: rgb(50, 50, 50);
-	@media #{$medium} {
-		margin-top: 60px;
-	}
-	@media #{$large} {
-		margin-top: 75px;
-	}
+	//margin-top: 50px; for fixed header
+	color: rgb(77, 77, 77);
+	// @media #{$medium} {
+	// 	margin-top: 60px;
+	// }
+	// @media #{$large} {
+	// 	margin-top: 75px;
+	// }
 	a {
 		@include transition;
 	}
@@ -22,23 +21,23 @@ body {
 	}
 	header {
 		&#header {
-			position: fixed;
+			//position: fixed;
 			height: 50px;
-			padding: 15px 0;
+			padding: 5px 0;
 			width: 100%;
-			background: rgba(255, 255, 255, 0.95);
+			background: rgb(26, 26, 26);
 			top: 0;
 			z-index: 1000;
 			overflow: hidden;
 			@include transition(.5s);
-			@media #{$medium} {
-				height: 60px;
-				padding: 12px 0;
-			}
-			@media #{$large} {
-				height: 75px;
-				padding: 13px 0;
-			}
+			// @media #{$medium} {
+			// 	height: 60px;
+			// 	padding: 12px 0;
+			// }
+			// @media #{$large} {
+			// 	height: 75px;
+			// 	padding: 13px 0;
+			// }
 			&.active {
 				@media #{$small} {
 					height: 100%;
@@ -49,6 +48,7 @@ body {
 				@include transition(.5s);
 			}
 			.ph-arrow-down {
+				color: white;
 				position: fixed;
 				top: 16px;
 				right: 26px;
@@ -64,26 +64,26 @@ body {
 						margin: 0 1em;
 						vertical-align: middle;
 						a {
-							color: $alert;
+							color: white;
 							font-family: $h-font-family;
 							text-transform: uppercase;
-							@media #{$medium} {
-								font-size: 1em;
-							}
-							@media #{$large} {
-								font-size: .8em;
-							}
+							// @media #{$medium} {
+							// 	font-size: 1em;
+							// }
+							// @media #{$large} {
+							// 	font-size: .8em;
+							// }
 							&:hover {
 								color: $primary;
 							}
 						}
 						&.mobile-logo {
-							margin-bottom: 10px !important;
+							margin: 0px 0px 10px 0px !important;
 							@media #{$medium}, #{$large} {
 								display: none;
 							}
 							a {
-								color: #323232;
+								color: white;
 								font-size: 1em;
 								&:hover {
 									color: #9ca1a3;
@@ -96,13 +96,14 @@ body {
 								display: inline-block;
 							}
 							a {
-								color: #323232;
-								@media #{$medium} {
-									font-size: 1.3em;
-								}
-								@media #{$large} {
-									font-size: 1.4em;
-								}
+								color: white;
+								font-size: 1em;
+								// @media #{$medium} {
+								// 	font-size: 1.3em;
+								// }
+								// @media #{$large} {
+								// 	font-size: 1.4em;
+								// }
 								&:hover {
 									color: #9ca1a3;
 								}
