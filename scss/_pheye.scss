@@ -1,8 +1,3 @@
-body {
-	padding: 0 10%;
-	background: url(http://i.imgur.com/zB98Tca.gif) center center no-repeat;
-	background-size: cover;
-}
 @mixin animate($single-animation-name: rotation, $time: 40s, $timing-function: linear, $iterations: infinite) {
 	animation: $single-animation-name $time $timing-function $iterations;
 		-webkit-animation: $single-animation-name $time $timing-function $iterations;
@@ -17,11 +12,12 @@ body {
 }
 
 .ph-eye {
-	margin: 10px;
+	margin: 15px 0;
+	max-height: 90%;
 	.ph-circle {
-		fill: none;
-		stroke: white;
-		stroke-width: 15;
+		// fill: none;
+		// stroke: white;
+		// stroke-width: 15;
 	}
 	.ph-eyelid {
 		@include animate(blink, 10s, ease, infinite);

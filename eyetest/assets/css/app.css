@@ -1,26 +1,32 @@
 body {
-  padding: 0 10%; }
+  padding: 0 10%;
+  background: url(http://i.imgur.com/zB98Tca.gif) center center no-repeat;
+  background-size: cover; }
 
-.ph-eye .ph-eyelid {
-  animation: blink 10s ease infinite;
-  -webkit-animation: blink 10s ease infinite;
-  -moz-animation: none;
-  -o-animation: blink 10s ease infinite;
-  transform-origin: 50%;
-  -webkit-transform-origin: 50%;
-  -moz-transform-origin: 50% 50% 0 !important;
-  -o-transform-origin: 50%; }
-.ph-eye .ph-gear {
-  animation: rotation 40s linear infinite;
-  -webkit-animation: rotation 40s linear infinite;
-  -moz-animation: none;
-  -o-animation: rotation 40s linear infinite;
-  transform-origin: 50%;
-  -webkit-transform-origin: 50%;
-  -moz-transform-origin: 50% 50% 0 !important;
-  -o-transform-origin: 50%; }
-  .ph-eye .ph-gear:hover {
-    fill: red; }
+.ph-eye {
+  margin: 10px; }
+  .ph-eye .ph-circle {
+    fill: none;
+    stroke: white;
+    stroke-width: 15; }
+  .ph-eye .ph-eyelid {
+    animation: blink 10s ease infinite;
+    -webkit-animation: blink 10s ease infinite;
+    -moz-animation: none;
+    -o-animation: blink 10s ease infinite;
+    transform-origin: 50%;
+    -webkit-transform-origin: 50%;
+    -moz-transform-origin: 50% 50% 0 !important;
+    -o-transform-origin: 50%; }
+  .ph-eye .ph-gear {
+    animation: rotation 40s linear infinite;
+    -webkit-animation: rotation 40s linear infinite;
+    -moz-animation: none;
+    -o-animation: rotation 40s linear infinite;
+    transform-origin: 50%;
+    -webkit-transform-origin: 50%;
+    -moz-transform-origin: 50% 50% 0 !important;
+    -o-transform-origin: 50%; }
 
 @-webkit-keyframes rotation {
   0% {

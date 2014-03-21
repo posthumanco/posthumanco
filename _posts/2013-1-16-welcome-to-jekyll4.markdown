@@ -3,10 +3,10 @@ layout: post
 title:  "Weekly SASS Mixin"
 date:   2013-11-19 11:00:00
 tags: [crystal meth, heroin]
-banner: http://i.imgur.com/lnbyA1N.png
+banner: http://i.imgur.com/YY8Vs7W.png
 ---
 
-Most of the time when we're caught up in work, it's easy to get focused on getting it done and finished so you can move onto the next project, or be done working in general. Granted, some people love their jobs, but who wouldn't enjoy a bit of extra time in the day to do something leisurely? If your idea of leisure is more work, wouldn't it be nice to get projects done sooner so you can move on to the next one (and maybe earn some more cash)?
+<i>Most of the time when we're caught up in work</i>, it's easy to get focused on getting it done and finished so you can move onto the next project, or be done working in general. Granted, some people love their jobs, but who wouldn't enjoy a bit of extra time in the day to do something leisurely? If your idea of leisure is more work, wouldn't it be nice to get projects done sooner so you can move on to the next one (and maybe earn some more cash)?
 
 You may not think about this, but so many people get into bad or lazy habits that could be improved if you just did a bit of research. Think about how much time you spend every day looking for files you've thrown somewhere easy to access instead of doing it the first time, gone to 4 different sites to read your blogs, or had to look up some code you end up using on almost every site.
 

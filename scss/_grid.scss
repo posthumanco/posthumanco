@@ -2,9 +2,11 @@ $total-columns: 12 !default;
 $column-gutter: 2% !default;
 $max-row-width: 1224px !default;
 
-$small: "only screen" !default;
+$screen: "only screen" !default;
+$small: "only screen and (min-width: 600px)" !default;
 $medium: "only screen and (min-width: 768px)" !default;
 $large: "only screen and (min-width: 1024px)" !default;
+$extra-large: "only screen and (min-width: 1300px)" !default;
 
 //////////////////////////////////////////////////
 // Column Generator
@@ -117,6 +119,10 @@ $large: "only screen and (min-width: 1024px)" !default;
 
 @include columns(pull);
 
+@media #{$screen} {
+	@include columns(screen);	
+}
+
 @media #{$small} {
 	@include columns(small);	
 }
@@ -127,4 +133,8 @@ $large: "only screen and (min-width: 1024px)" !default;
 
 @media #{$large} {
 	@include columns(large);
+}
+
+@media #{$extra-large} {
+	@include columns(extra-large);
 }

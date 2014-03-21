@@ -10,17 +10,18 @@ layout: default
 				</div>
 			</div>
 		{% endif %}
-		<div class="small-11 small-centered medium-10 medium-centered large-6 large-centered columns">
+		<div class="screen-11 screen-centered small-8 small-centered medium-7 medium-centered large-6 large-centered extra-large-5 extra-large-centered columns">
 	  		<header>
-	  			<h1><small><time pubdate="pubdate">{{ page.date | date_to_string }}</time></small>{{ page.title }}</h1>
+	  			<h1 class="text-center"><!-- <small><time pubdate="pubdate">{{ page.date | date_to_string }}</time></small> -->{{ page.title }}</h1>
 	  		</header>
 			{{ content }}
 			<footer>
 				{% if page.tags != empty %}
-					Tags: 
+					<p>Tags: 
 					{% for tag in page.tags %}
 						<a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
 					{% endfor %}
+					</p>
 				{% endif %}
 			</footer>
 	  	</div>

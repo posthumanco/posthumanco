@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Gentium+Book+Basic:400,700,400italic,700italic);
 /* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, .highlight, .pagination ul li, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, ul li dl, ol li dl, dt, dd, ol, ul li ol, ol li ol, ul, ul li ul, ol li ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Gentium+Book+Basic:400,700,400italic,700italic);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, .highlight, nav.pagination ul li, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, ul li dl, ol li dl, dt, dd, ol, ul li ol, ol li ol, ul, ul li ul, ol li ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -39,7 +39,6 @@ table {
   src: url("fonts/posthuman.eot?#iefix") format("embedded-opentype"), url("fonts/posthuman.woff") format("woff"), url("fonts/posthuman.ttf") format("truetype"), url("fonts/posthuman.svg#posthuman") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
   font-family: 'posthuman';
@@ -455,6 +454,96 @@ you can use the generic selector below, but it's slower:
   position: relative; }
 
 @media only screen {
+  .screen-1 {
+    width: 8.33333%;
+    position: relative; }
+
+  .screen-offset-1 {
+    margin-left: 8.33333%; }
+
+  .screen-2 {
+    width: 16.66667%;
+    position: relative; }
+
+  .screen-offset-2 {
+    margin-left: 16.66667%; }
+
+  .screen-3 {
+    width: 25%;
+    position: relative; }
+
+  .screen-offset-3 {
+    margin-left: 25%; }
+
+  .screen-4 {
+    width: 33.33333%;
+    position: relative; }
+
+  .screen-offset-4 {
+    margin-left: 33.33333%; }
+
+  .screen-5 {
+    width: 41.66667%;
+    position: relative; }
+
+  .screen-offset-5 {
+    margin-left: 41.66667%; }
+
+  .screen-6 {
+    width: 50%;
+    position: relative; }
+
+  .screen-offset-6 {
+    margin-left: 50%; }
+
+  .screen-7 {
+    width: 58.33333%;
+    position: relative; }
+
+  .screen-offset-7 {
+    margin-left: 58.33333%; }
+
+  .screen-8 {
+    width: 66.66667%;
+    position: relative; }
+
+  .screen-offset-8 {
+    margin-left: 66.66667%; }
+
+  .screen-9 {
+    width: 75%;
+    position: relative; }
+
+  .screen-offset-9 {
+    margin-left: 75%; }
+
+  .screen-10 {
+    width: 83.33333%;
+    position: relative; }
+
+  .screen-offset-10 {
+    margin-left: 83.33333%; }
+
+  .screen-11 {
+    width: 91.66667%;
+    position: relative; }
+
+  .screen-offset-11 {
+    margin-left: 91.66667%; }
+
+  .screen-12 {
+    width: 100%;
+    position: relative; }
+
+  .screen-offset-12 {
+    margin-left: 100%; }
+
+  .screen-centered {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important; } }
+@media only screen and (min-width: 600px) {
   .small-1 {
     width: 8.33333%;
     position: relative; }
@@ -724,8 +813,273 @@ you can use the generic selector below, but it's slower:
     margin-left: auto;
     margin-right: auto;
     float: none !important; } }
+@media only screen and (min-width: 1300px) {
+  .extra-large-1 {
+    width: 8.33333%;
+    position: relative; }
+
+  .extra-large-offset-1 {
+    margin-left: 8.33333%; }
+
+  .extra-large-2 {
+    width: 16.66667%;
+    position: relative; }
+
+  .extra-large-offset-2 {
+    margin-left: 16.66667%; }
+
+  .extra-large-3 {
+    width: 25%;
+    position: relative; }
+
+  .extra-large-offset-3 {
+    margin-left: 25%; }
+
+  .extra-large-4 {
+    width: 33.33333%;
+    position: relative; }
+
+  .extra-large-offset-4 {
+    margin-left: 33.33333%; }
+
+  .extra-large-5 {
+    width: 41.66667%;
+    position: relative; }
+
+  .extra-large-offset-5 {
+    margin-left: 41.66667%; }
+
+  .extra-large-6 {
+    width: 50%;
+    position: relative; }
+
+  .extra-large-offset-6 {
+    margin-left: 50%; }
+
+  .extra-large-7 {
+    width: 58.33333%;
+    position: relative; }
+
+  .extra-large-offset-7 {
+    margin-left: 58.33333%; }
+
+  .extra-large-8 {
+    width: 66.66667%;
+    position: relative; }
+
+  .extra-large-offset-8 {
+    margin-left: 66.66667%; }
+
+  .extra-large-9 {
+    width: 75%;
+    position: relative; }
+
+  .extra-large-offset-9 {
+    margin-left: 75%; }
+
+  .extra-large-10 {
+    width: 83.33333%;
+    position: relative; }
+
+  .extra-large-offset-10 {
+    margin-left: 83.33333%; }
+
+  .extra-large-11 {
+    width: 91.66667%;
+    position: relative; }
+
+  .extra-large-offset-11 {
+    margin-left: 91.66667%; }
+
+  .extra-large-12 {
+    width: 100%;
+    position: relative; }
+
+  .extra-large-offset-12 {
+    margin-left: 100%; }
+
+  .extra-large-centered {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important; } }
+body {
+  font-size: 18px; }
+  @media only screen and (min-width: 600px) {
+    body {
+      font-size: 19px; } }
+  @media only screen and (min-width: 768px) {
+    body {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    body {
+      font-size: 22px; } }
+  @media only screen and (min-width: 1300px) {
+    body {
+      font-size: 24px; } }
+
+h1, .h1 {
+  color: #0a0a0a;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  margin: 0 0 0.9em 0;
+  line-height: 1.2em; }
+  h1 a, .h1 a {
+    font-weight: 400; }
+  h1 small, .h1 small {
+    font-size: 0.5em;
+    display: block; }
+
+h2, .h2 {
+  color: #0a0a0a;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 0 0 0.9em 0;
+  line-height: 1.2em; }
+  h2 a, .h2 a {
+    font-weight: 400; }
+  h2 small, .h2 small {
+    font-size: -0.8em;
+    display: block; }
+
+h3, .h3 {
+  color: #0a0a0a;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0 0 0.9em 0;
+  line-height: 1.2em; }
+  h3 a, .h3 a {
+    font-weight: 400; }
+  h3 small, .h3 small {
+    font-size: -2.1em;
+    display: block; }
+
+h4, .h4 {
+  color: #0a0a0a;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 0 0.9em 0;
+  line-height: 1.2em; }
+  h4 a, .h4 a {
+    font-weight: 400; }
+  h4 small, .h4 small {
+    font-size: -3.4em;
+    display: block; }
+
+h5, .h5 {
+  color: #0a0a0a;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin: 0 0 0.9em 0;
+  line-height: 1.2em; }
+  h5 a, .h5 a {
+    font-weight: 400; }
+  h5 small, .h5 small {
+    font-size: -4.7em;
+    display: block; }
+
+h6, .h6 {
+  color: #0a0a0a;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 0.6em;
+  font-weight: 400;
+  margin: 0 0 0.9em 0;
+  line-height: 1.2em; }
+  h6 a, .h6 a {
+    font-weight: 400; }
+  h6 small, .h6 small {
+    font-size: -6.0em;
+    display: block; }
+
+i {
+  font-style: italic; }
+
+p {
+  margin: 0 0 1.5em 0;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5; }
+
+strong {
+  font-weight: 400; }
+
+ul, ul li ul, ol li ul {
+  margin: 1.5em 0 1.5em 1em;
+  line-height: 0; }
+  ul li, ul li ul li, ol li ul li {
+    line-height: 1.5;
+    list-style-type: disc; }
+    ul li ul {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    ul li ol {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    ul li dl {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+
+ol, ul li ol, ol li ol {
+  margin: 1.5em 0 1.5em 1.4em;
+  line-height: 0; }
+  ol li, ul li ol li, ol li ol li {
+    line-height: 1.5;
+    list-style-type: decimal; }
+    ol li ul {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    ol li ol {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    ol li dl {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+
+dl, ul li dl, ol li dl {
+  margin: 1.5em 0 1.5em 0;
+  line-height: 0; }
+  dl dd, ul li dl dd, ol li dl dd {
+    margin-left: 1em;
+    line-height: 1.5; }
+    dl dd:before {
+      content: "- "; }
+
+/* THIS AREA NEEDS VARIABLES */
+code, .highlight, nav.pagination ul li {
+  background: #fff;
+  color: #777;
+  padding: .2em;
+  border-radius: 2px; }
+  @media only screen and (min-width: 600px) {
+    code, .highlight, nav.pagination ul li {
+      padding: .1em; } }
+
+.highlight {
+  padding: .5em; }
+  .highlight code, .highlight .highlight, .highlight nav.pagination ul li, nav.pagination ul .highlight li {
+    background: none;
+    white-space: pre-wrap; }
+
+blockquote {
+  padding-left: 10px;
+  border-left: 5px solid #c8c7b8; }
+
+cite {
+  font-style: italic;
+  font-size: .8em;
+  display: block;
+  margin-top: 1em; }
+  cite:before {
+    content: "\2014 \0020"; }
+
 button, a.button, input[type=submit] {
-  background: #1a1a1a;
+  background: #0a0a0a;
   border: none;
   padding: 0.5em;
   font-size: 1em;
@@ -733,7 +1087,7 @@ button, a.button, input[type=submit] {
   border-radius: 2px;
   color: white !important; }
   button:hover, a.button:hover, input[type=submit]:hover {
-    background: #343434; }
+    background: #242424; }
   button.tiny, a.button.tiny, input[type=submit].tiny {
     padding: 0.5em;
     font-size: 0.7em; }
@@ -746,9 +1100,9 @@ button, a.button, input[type=submit] {
   button.expand, a.button.expand, input[type=submit].expand {
     width: 100%; }
   button.primary, a.button.primary, input[type=submit].primary {
-    background: #1a1a1a; }
+    background: #0a0a0a; }
     button.primary:hover, a.button.primary:hover, input[type=submit].primary:hover {
-      background: #343434; }
+      background: #242424; }
   button.secondary, a.button.secondary, input[type=submit].secondary {
     background: #00ed7a; }
     button.secondary:hover, a.button.secondary:hover, input[type=submit].secondary:hover {
@@ -763,16 +1117,19 @@ button, a.button, input[type=submit] {
       background: #f60e00; }
 
 a {
-  color: #1a1a1a;
-  text-decoration: none; }
+  color: #0a0a0a;
+  text-decoration: none;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1em;
+  font-weight: 500; }
   a:visited {
-    color: #1a1a1a; }
+    color: #0a0a0a; }
   a:hover {
-    color: #343434; }
+    color: #242424; }
   a.primary {
-    color: #1a1a1a; }
+    color: #0a0a0a; }
     a.primary:hover {
-      color: #343434; }
+      color: #242424; }
   a.secondary {
     color: #00ed7a; }
     a.secondary:hover {
@@ -790,165 +1147,20 @@ img.fluid-image {
   max-width: 100%;
   height: auto; }
 
-body {
-  font-size: 16px; }
-  @media only screen and (min-width: 768px) {
-    body {
-      font-size: 18px; } }
-  @media only screen and (min-width: 1024px) {
-    body {
-      font-size: 22px; } }
-
-h1, .h1 {
-  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  margin-top: 1em;
-  margin-bottom: .5em;
-  line-height: 1.2em; }
-  h1 small, .h1 small {
-    font-size: 0.4em;
+nav ul, nav ul li ul, ul li nav ul, nav ol li ul, ol li nav ul {
+  margin: 0; }
+  nav ul li {
     display: block; }
-
-h2, .h2 {
-  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 1.6em;
-  font-weight: 400;
-  margin-top: 1em;
-  margin-bottom: .5em;
-  line-height: 1.2em; }
-  h2 small, .h2 small {
-    font-size: -1.2em;
-    display: block; }
-
-h3, .h3 {
-  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 1.4em;
-  font-weight: 400;
-  margin-top: 1em;
-  margin-bottom: .5em;
-  line-height: 1.2em; }
-  h3 small, .h3 small {
-    font-size: -2.8em;
-    display: block; }
-
-h4, .h4 {
-  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 1.2em;
-  font-weight: 400;
-  margin-top: 1em;
-  margin-bottom: .5em;
-  line-height: 1.2em; }
-  h4 small, .h4 small {
-    font-size: -4.4em;
-    display: block; }
-
-h5, .h5 {
-  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  margin-top: 1em;
-  margin-bottom: .5em;
-  line-height: 1.2em; }
-  h5 small, .h5 small {
-    font-size: -6em;
-    display: block; }
-
-h6, .h6 {
-  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 0.8em;
-  font-weight: 400;
-  margin-top: 1em;
-  margin-bottom: .5em;
-  line-height: 1.2em; }
-  h6 small, .h6 small {
-    font-size: -7.6em;
-    display: block; }
-
-p {
-  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.61803;
-  margin: 1.5em 0; }
-
-strong {
-  font-weight: 400; }
-
-ul, ul li ul, ol li ul {
-  margin: 1.5em 0 1.5em 1em; }
-  ul li, ul li ul li, ol li ul li {
-    line-height: 1.61803;
-    list-style-type: disc; }
-    ul li ul {
-      margin-top: 0px;
-      margin-bottom: 0px; }
-    ul li ol {
-      margin-top: 0px;
-      margin-bottom: 0px; }
-    ul li dl {
-      margin-top: 0px;
-      margin-bottom: 0px; }
-
-ol, ul li ol, ol li ol {
-  margin: 1.5em 0 1.5em 1.4em; }
-  ol li, ul li ol li, ol li ol li {
-    line-height: 1.61803;
-    list-style-type: decimal; }
-    ol li ul {
-      margin-top: 0px;
-      margin-bottom: 0px; }
-    ol li ol {
-      margin-top: 0px;
-      margin-bottom: 0px; }
-    ol li dl {
-      margin-top: 0px;
-      margin-bottom: 0px; }
-
-dl, ul li dl, ol li dl {
-  margin: 1.5em 0 1.5em 0; }
-  dl dd, ul li dl dd, ol li dl dd {
-    margin-left: 1em;
-    line-height: 1.61803; }
-    dl dd:before {
-      content: "- "; }
-
-/* THIS AREA NEEDS VARIABLES */
-code, .highlight, .pagination ul li {
-  background: #fff;
-  color: #777;
-  padding: .2em;
-  border-radius: 2px; }
-  @media only screen {
-    code, .highlight, .pagination ul li {
-      padding: .1em; } }
-
-.highlight {
-  padding: .5em; }
-  .highlight code, .highlight .highlight, .highlight .pagination ul li, .pagination ul .highlight li {
-    background: none;
-    white-space: pre-wrap; }
-
-blockquote {
-  padding-left: 10px;
-  border-left: 5px solid #c8c7b8; }
-
-cite {
-  font-style: italic;
-  font-size: .8em;
-  display: block;
-  margin-top: 1em; }
-  cite:before {
-    content: "\2014 \0020"; }
-
-nav ul li {
-  display: block; }
-  @media only screen and (min-width: 768px) {
-    nav ul li {
-      display: inline-block; } }
+    @media only screen and (min-width: 768px) {
+      nav ul li {
+        display: inline-block; } }
+    nav ul li a {
+      font-weight: 300; }
 
 body {
   color: #4d4d4d; }
+  body h1, body .h1 {
+    text-transform: uppercase; }
   body a {
     transition: color 0.5s, height 0.5s, transform 0.5s;
     -webkit-transition: color 0.5s, height 0.5s, -webkit-transform 0.5s;
@@ -958,7 +1170,6 @@ body {
     margin-bottom: -1em; }
   body header#header {
     height: 50px;
-    padding: 5px 0;
     width: 100%;
     background: #1a1a1a;
     top: 0;
@@ -986,39 +1197,44 @@ body {
       @media only screen and (min-width: 768px), only screen and (min-width: 1024px) {
         body header#header .ph-arrow-down {
           display: none; } }
-    body header#header nav ul {
-      margin: 0; }
-      body header#header nav ul li {
-        margin: 0 1em;
-        vertical-align: middle; }
-        body header#header nav ul li a {
-          color: white;
-          font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-          text-transform: uppercase; }
-          body header#header nav ul li a:hover {
-            color: #1a1a1a; }
-        body header#header nav ul li.mobile-logo {
-          margin: 0px 0px 10px 0px !important; }
-          @media only screen and (min-width: 768px), only screen and (min-width: 1024px) {
-            body header#header nav ul li.mobile-logo {
-              display: none; } }
-          body header#header nav ul li.mobile-logo a {
-            color: white;
-            font-size: 1em; }
-            body header#header nav ul li.mobile-logo a:hover {
-              color: #9ca1a3; }
+    body header#header nav ul.pages {
+      float: left;
+      clear: both;
+      margin-bottom: 1em; }
+      @media only screen and (min-width: 768px) {
+        body header#header nav ul.pages {
+          float: right;
+          clear: none;
+          margin-bottom: 0; } }
+    body header#header nav ul li {
+      line-height: 1; }
+      body header#header nav ul li a {
+        color: white;
+        font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        text-transform: uppercase;
+        font-size: .8em;
+        font-weight: 300;
+        padding: 1em .5em;
+        display: block; }
+        @media only screen and (min-width: 768px) {
+          body header#header nav ul li a {
+            padding: 18px .5em;
+            font-size: 15px; } }
+        body header#header nav ul li a:hover {
+          color: #0a0a0a; }
+      body header#header nav ul li.logo .ph-posthuman_text {
+        stroke: 1; }
+      @media only screen and (min-width: 768px) {
         body header#header nav ul li.logo {
-          display: none; }
-          @media only screen and (min-width: 768px) {
-            body header#header nav ul li.logo {
-              display: inline-block; } }
-          body header#header nav ul li.logo a {
-            color: white;
-            font-size: 1em; }
-            body header#header nav ul li.logo a:hover {
-              color: #9ca1a3; }
+          display: inline-block; } }
+      body header#header nav ul li.logo a {
+        padding: 14px 0;
+        color: white;
+        font-size: 20px; }
+        body header#header nav ul li.logo a:hover {
+          color: #9ca1a3; }
   body .content article {
-    margin-bottom: 2em; }
+    margin-bottom: 4em; }
   body .content.index article p {
     margin-bottom: 1em; }
   body .content.index footer {
@@ -1036,7 +1252,10 @@ body {
         content: ""; }
 
 .banner {
-  margin-bottom: 1em; }
+  margin-bottom: 3em;
+  max-height: 300px;
+  overflow: hidden;
+  background: #dedede; }
   .banner img {
     max-width: 100%;
     width: 100%;
@@ -1051,15 +1270,16 @@ body {
     color: #777;
     padding: .5em; }
 
-.pagination {
-  vertical-align: middle;
-  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
-  .pagination ul {
+nav.pagination {
+  margin-bottom: 3em; }
+  nav.pagination ul {
+    vertical-align: middle;
+    font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin-left: 0; }
-    .pagination ul li {
+    nav.pagination ul li {
       padding: .3em;
       display: inline-block; }
-      .pagination ul li:hover a {
+      nav.pagination ul li:hover a {
         color: red; }
 
 h1.tags {
@@ -1071,4 +1291,38 @@ ul.tags {
   ul.tags li {
     list-style-type: none; }
 
+.ph-eye {
+  margin: 15px 0;
+  max-height: 90%; }
+  .ph-eye .ph-eyelid {
+    animation: blink 10s ease infinite;
+    -webkit-animation: blink 10s ease infinite;
+    -moz-animation: none;
+    -o-animation: blink 10s ease infinite;
+    transform-origin: 50%;
+    -webkit-transform-origin: 50%;
+    -moz-transform-origin: 50% 50% 0 !important;
+    -o-transform-origin: 50%; }
+  .ph-eye .ph-gear {
+    animation: rotation 40s linear infinite;
+    -webkit-animation: rotation 40s linear infinite;
+    -moz-animation: none;
+    -o-animation: rotation 40s linear infinite;
+    transform-origin: 50%;
+    -webkit-transform-origin: 50%;
+    -moz-transform-origin: 50% 50% 0 !important;
+    -o-transform-origin: 50%; }
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@-webkit-keyframes blink {
+  0%, 98%, 100% {
+    -webkit-transform: scaleX(1) scaleY(1); }
+
+  99% {
+    -webkit-transform: scaleX(1.1) scaleY(0.01); } }
 /* Form Elements */

@@ -12,6 +12,9 @@ body {
 	// @media #{$large} {
 	// 	margin-top: 75px;
 	// }
+	h1, .h1 {
+		 text-transform: uppercase;
+	}
 	a {
 		@include transition;
 	}
@@ -23,23 +26,15 @@ body {
 		&#header {
 			//position: fixed;
 			height: 50px;
-			padding: 5px 0;
+			//padding: 15px 0;
 			width: 100%;
 			background: rgb(26, 26, 26);
 			top: 0;
 			z-index: 1000;
 			overflow: hidden;
 			@include transition(.5s);
-			// @media #{$medium} {
-			// 	height: 60px;
-			// 	padding: 12px 0;
-			// }
-			// @media #{$large} {
-			// 	height: 75px;
-			// 	padding: 13px 0;
-			// }
 			&.active {
-				@media #{$small} {
+				@media #{$screen} {
 					height: 100%;
 				}
 				@media #{$medium} {
@@ -59,51 +54,45 @@ body {
 			}
 			nav {
 				ul {
-					margin: 0;
+					&.pages {
+						float: left;
+						clear: both;
+						margin-bottom: 1em;
+						@media #{$medium} {
+							float: right;
+							clear: none;
+							margin-bottom: 0;
+						}
+					}
 					li {
-						margin: 0 1em;
-						vertical-align: middle;
+						line-height: 1;
 						a {
 							color: white;
 							font-family: $h-font-family;
 							text-transform: uppercase;
-							// @media #{$medium} {
-							// 	font-size: 1em;
-							// }
-							// @media #{$large} {
-							// 	font-size: .8em;
-							// }
+							font-size: .8em;
+							font-weight: 300;
+							padding: 1em .5em;
+							display: block;
+							@media #{$medium} {
+								padding: 18px .5em;
+								font-size: 15px;
+							}
 							&:hover {
 								color: $primary;
 							}
 						}
-						&.mobile-logo {
-							margin: 0px 0px 10px 0px !important;
-							@media #{$medium}, #{$large} {
-								display: none;
-							}
-							a {
-								color: white;
-								font-size: 1em;
-								&:hover {
-									color: #9ca1a3;
-								}
-							}
-						}
 						&.logo {
-							display: none;
+							.ph-posthuman_text {
+								stroke: 1;
+							}
 							@media #{$medium} {
 								display: inline-block;
 							}
 							a {
+								padding: 14px 0;
 								color: white;
-								font-size: 1em;
-								// @media #{$medium} {
-								// 	font-size: 1.3em;
-								// }
-								// @media #{$large} {
-								// 	font-size: 1.4em;
-								// }
+								font-size: 20px;
 								&:hover {
 									color: #9ca1a3;
 								}
@@ -116,7 +105,7 @@ body {
 	}
 	.content {
 		article {
-			margin-bottom: 2em;
+			margin-bottom: 4em;
 		}
 		&.index {
 			article {
@@ -147,7 +136,10 @@ body {
 }
 
 .banner {
-	margin-bottom: 1em;
+	margin-bottom: 3em;
+	max-height: 300px;
+	overflow: hidden;
+	background: rgb(222, 222, 222);
 	img {
 		max-width: 100%;
 		width: 100%;
@@ -161,17 +153,19 @@ body {
 		.columns {
 			background: #fff;
 			border: 1px solid #d6d6d6;
-			border-radius: $button-border-radius;
+			border-radius: $border-radius;
 			color: #777;
 			padding: .5em;
 		}
 	}
 }
 
-.pagination {
-	vertical-align: middle;
-	font-family: $h-font-family;
+
+nav.pagination {
+	margin-bottom: 3em;
 	ul {
+		vertical-align: middle;
+		font-family: $h-font-family;
 		margin-left: 0;
 		li {
 			@extend code;
