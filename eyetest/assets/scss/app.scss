@@ -19,9 +19,9 @@ body {
 .ph-eye {
 	margin: 10px;
 	.ph-circle {
-		fill: none;
-		stroke: white;
-		stroke-width: 15;
+		// fill: none;
+		// stroke: white;
+		// stroke-width: 15;
 	}
 	.ph-eyelid {
 		@include animate(blink, 10s, ease, infinite);
