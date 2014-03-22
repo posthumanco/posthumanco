@@ -4,7 +4,7 @@ port: 4000
 baseurl: #/posthumanco
 markdown: redcarpet
 pygments: true
-permalink: /:title
+permalink: /blog/:title
 paginate: 3
 paginate_path: "page:num"
 
