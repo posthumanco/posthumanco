@@ -44,7 +44,7 @@ body {
 			}
 			.ph-arrow-down {
 				color: white;
-				position: fixed;
+				position: absolute;
 				top: 16px;
 				right: 26px;
 				z-index: 9999;
@@ -137,12 +137,15 @@ body {
 
 .banner {
 	margin-bottom: 3em;
-	max-height: 300px;
+	max-height: 150px;
 	overflow: hidden;
 	background-color: rgb(222, 222, 222);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	@media #{$medium} {
+		max-height: 300px;
+	}
 	img {
 		max-width: 100%;
 		width: 100%;
