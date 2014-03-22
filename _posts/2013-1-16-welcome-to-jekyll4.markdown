@@ -3,7 +3,7 @@ layout: post
 title:  "Weekly SASS Mixin"
 date:   2013-11-19 11:00:00
 tags: [crystal meth, heroin]
-banner: {{ site.baseurl }}/images/glitch/IMG_4383-glitched-a0-s0-i1-q1.png
+banner: '!SITE_URL'/images/glitch/IMG_4383-glitched-a0-s0-i1-q1.png
 ---
 
 <i>Most of the time when we're caught up in work</i>, it's easy to get focused on getting it done and finished so you can move onto the next project, or be done working in general. Granted, some people love their jobs, but who wouldn't enjoy a bit of extra time in the day to do something leisurely? If your idea of leisure is more work, wouldn't it be nice to get projects done sooner so you can move on to the next one (and maybe earn some more cash)?
