@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Posthuman - Blog
-banner: '!SITE_URL'/images/IMG_6588.jpg
+banner: ./images/IMG_6588.jpg
 ---
 
 <div class="content index">
-	<div class="row collapse banner" style="background-image:url({{ page.banner | replace: '!SITE_URL!', site.url }});">
+	<div class="row collapse banner" style="background-image:url({{ page.banner }});">
 		<div class="small-12 columns">
 			{% include eye.html %}
 		</div>
