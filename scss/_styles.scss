@@ -79,7 +79,7 @@ body {
 								font-size: 15px;
 							}
 							&:hover {
-								color: $primary;
+								color: rgb(222, 222, 222);
 							}
 						}
 						&.logo {
@@ -94,7 +94,7 @@ body {
 								color: white;
 								font-size: 20px;
 								&:hover {
-									color: #9ca1a3;
+									color: rgb(222, 222, 222);
 								}
 							}
 						}
@@ -139,7 +139,10 @@ body {
 	margin-bottom: 3em;
 	max-height: 300px;
 	overflow: hidden;
-	background: rgb(222, 222, 222);
+	background-color: rgb(222, 222, 222);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 	img {
 		max-width: 100%;
 		width: 100%;

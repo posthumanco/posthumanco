@@ -4,8 +4,8 @@ name: Posthuman
 baseurl: /posthumanco
 markdown: redcarpet
 pygments: true
-permalink: /blog/:title
+permalink: blog/:title
 paginate: 3
-paginate_path: "page:num"
+paginate_path: "blog/page:num"
 
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']

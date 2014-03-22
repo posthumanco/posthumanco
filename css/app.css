@@ -1222,7 +1222,7 @@ body {
             padding: 18px .5em;
             font-size: 15px; } }
         body header#header nav ul li a:hover {
-          color: #0a0a0a; }
+          color: #dedede; }
       body header#header nav ul li.logo .ph-posthuman_text {
         stroke: 1; }
       @media only screen and (min-width: 768px) {
@@ -1233,7 +1233,7 @@ body {
         color: white;
         font-size: 20px; }
         body header#header nav ul li.logo a:hover {
-          color: #9ca1a3; }
+          color: #dedede; }
   body .content article {
     margin-bottom: 4em; }
   body .content.index article p {
@@ -1256,7 +1256,10 @@ body {
   margin-bottom: 3em;
   max-height: 300px;
   overflow: hidden;
-  background: #dedede; }
+  background-color: #dedede;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
   .banner img {
     max-width: 100%;
     width: 100%;
