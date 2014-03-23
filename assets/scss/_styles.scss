@@ -1,0 +1,214 @@
+@mixin transition($duration: 0.5s) {
+	transition: color $duration, height $duration, transform $duration;
+		-webkit-transition: color $duration, height $duration, -webkit-transform $duration;
+		-moz-transition: color $duration, height $duration, -moz-transform $duration;
+}
+body {
+	//margin-top: 50px; for fixed header
+	color: rgb(77, 77, 77);
+	// @media #{$medium} {
+	// 	margin-top: 60px;
+	// }
+	// @media #{$large} {
+	// 	margin-top: 75px;
+	// }
+	h1, .h1 {
+		 text-transform: uppercase;
+	}
+	a {
+		@include transition;
+	}
+	small {
+		color: $disabled;
+		margin-bottom: -1em;
+	}
+	header {
+		&#header {
+			//position: fixed;
+			height: 50px;
+			//padding: 15px 0;
+			width: 100%;
+			background: rgb(26, 26, 26);
+			top: 0;
+			z-index: 1000;
+			overflow: hidden;
+			@include transition;
+			&.active {
+				height: 230px;
+				@media #{$medium} {
+					height: inherit;
+				}
+				@include transition;
+			}
+			.ph-arrow-down {
+				color: white;
+				position: absolute;
+				top: 16px;
+				right: 26px;
+				z-index: 9999;
+				@media #{$medium}, #{$large} {
+					display: none;
+				}
+			}
+			nav {
+				ul {
+					&.pages {
+						float: left;
+						clear: both;
+						margin-bottom: 1em;
+						@media #{$medium} {
+							float: right;
+							clear: none;
+							margin-bottom: 0;
+						}
+					}
+					li {
+						line-height: 1;
+						a {
+							color: white;
+							font-family: $h-font-family;
+							text-transform: uppercase;
+							font-size: .8em;
+							font-weight: 300;
+							padding: 1em .5em;
+							display: block;
+							@media #{$medium} {
+								padding: 18px .5em;
+								font-size: 15px;
+							}
+							&:hover {
+								color: rgb(222, 222, 222);
+							}
+						}
+						&.logo {
+							.ph-posthuman_text {
+								stroke: 1;
+							}
+							@media #{$medium} {
+								display: inline-block;
+							}
+							a {
+								padding: 14px 0;
+								color: white;
+								font-size: 20px;
+								&:hover {
+									color: rgb(222, 222, 222);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.content {
+		article {
+			margin-bottom: 4em;
+		}
+		&.index {
+			.h1 {
+				margin-bottom: .5em;
+			}
+			article {
+				p {
+					margin-bottom: 1em;
+				}
+			}
+			footer {
+				border: 0;
+				padding-top: 0;
+			}
+		}
+	}
+	footer {
+		border-top: 1px solid #d6d6d6;
+		padding-top: 1.5em;
+		font-size: .8em;
+		a {
+			text-transform: capitalize;
+			&:after {
+				content: ", ";
+			}
+			&:last-child:after {
+				content: "";
+			}
+		}
+	}
+}
+
+.banner {
+	margin-bottom: 3em;
+	max-height: 150px;
+	overflow: hidden;
+	background-color: rgb(222, 222, 222);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding: 5px 0;
+	@media #{$medium} {
+		max-height: 300px;
+		padding: 15px 0;
+	}
+	img {
+		max-width: 100%;
+		width: 100%;
+		display: block;
+		margin-top: -15px;
+	}
+}
+
+.demo {
+	.row {
+		margin: .2em auto;
+		.columns {
+			background: #fff;
+			border: 1px solid #d6d6d6;
+			border-radius: $border-radius;
+			color: #777;
+			padding: .5em;
+		}
+	}
+}
+
+
+nav.pagination {
+	// margin-bottom: 3em;
+	ul {
+		vertical-align: middle;
+		font-family: $h-font-family;
+		margin-left: 0;
+		li {
+			@extend code;
+			padding: .3em;
+			display: inline-block;
+			&:first-child {
+				
+			}
+			&:hover {
+				a {
+					color: red;
+				}
+			}
+		}
+	}
+}
+
+h1.tags {
+	text-transform: capitalize;
+}
+
+ul.tags {
+	margin: 0;
+	text-transform: capitalize;
+	li {
+		list-style-type: none;
+	}
+}
+
+.pagenotfound {
+	height: 100%;
+	width: 100%;
+	padding: 0 10%;
+	background: url(http://i.imgur.com/zB98Tca.gif) center center no-repeat;
+	background-size: cover;
+}
