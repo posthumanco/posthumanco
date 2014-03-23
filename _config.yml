@@ -1,6 +1,4 @@
 name: Posthuman
-# host: localhost
-# port: 4000
 baseurl: /posthumanco
 markdown: redcarpet
 pygments: true
