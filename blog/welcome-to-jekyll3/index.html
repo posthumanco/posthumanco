@@ -6,30 +6,38 @@
         <title>Well ain't that some shit.</title>
         <meta name="viewport" content="width=device-width">
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/posthumanco/css/syntax.css">
+        <link rel="stylesheet" href="/posthumanco/assets/css/syntax.css">
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/posthumanco/css/app.css">
+        <link rel="stylesheet" href="/posthumanco/assets/css/app.css">
         <!-- jQuery -->
-        <script src="/posthumanco/javascript/jquery-v2.0.3.min.js"></script>
+        <script src="/posthumanco/assets/javascript/jquery-v2.0.3.min.js"></script>
+        <!-- Typekit -->
+        <script type="text/javascript" src="//use.typekit.net/qbs3wol.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="/posthumanco/images/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/posthumanco/images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/posthumanco/assets/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/posthumanco/assets/images/favicon.ico" type="image/x-icon">
     </head>
     <body>
-      <div class="row full-width collapse nav text-center"><!--nav wrapper-->
+      <div class="row full-width collapse nav"><!--nav wrapper-->
         <div class="small-12 columns">
           <header id="header">
             <i class="ph-arrow-down menu-toggle"></i>
-            <nav>
-              <ul>
-                <li class="mobile-logo"><a href="#"><i class="ph-posthuman_text"></i></a></li>
-                <li><a href="#">Posts</a></li>
-                <li><a href="/posthumanco/tags">Tags</a></li>
-                <li class="logo"><a href="/posthumanco"><i class="ph-posthuman_text"></i></a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Search</a></li>
-              </ul>
-            </nav>
+            <div class="row">
+              <div class="screen-11 screen-centered columns">
+                <nav>
+                  <ul class="left">
+                    <li class="logo"><a href="/posthumanco"><i class="ph-posthuman_text"></i></a></li>
+                  </ul>
+                  <ul class="pages">
+                      <li><a href="/posthumanco/blog">Blog</a></li>
+                      <li><a href="/posthumanco/tags">Work</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Store</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
           </header>
         </div>
       </div><!--end nav wrapper row-->
@@ -37,9 +45,9 @@
         <div class="content">
 	<article>
 		
-		<div class="small-11 small-centered medium-10 medium-centered large-6 large-centered columns">
+		<div class="screen-11 screen-centered small-8 small-centered medium-7 medium-centered large-6 large-centered extra-large-5 extra-large-centered columns">
 	  		<header>
-	  			<h1><small><time pubdate="pubdate">19 Nov 2013</time></small>Well ain't that some shit.</h1>
+	  			<h1 class="text-center"><!-- <small><time pubdate="pubdate">19 Nov 2013</time></small> -->Well ain't that some shit.</h1>
 	  		</header>
 			<p>Most of the time when we&#39;re caught up in work, it&#39;s easy to get focused on getting it done and finished so you can move onto the next project, or be done working in general. Granted, some people love their jobs, but who wouldn&#39;t enjoy a bit of extra time in the day to do something leisurely? If your idea of leisure is more work, wouldn&#39;t it be nice to get projects done sooner so you can move on to the next one (and maybe earn some more cash)?</p>
 
@@ -98,10 +106,11 @@
 
 			<footer>
 				
-					Tags: 
+					<p>Tags: 
 					
 						<a href="/posthumanco/tag/bullshit">bullshit</a>
 					
+					</p>
 				
 			</footer>
 	  	</div>
