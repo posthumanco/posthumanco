@@ -150,7 +150,10 @@ dl {
 
 //Code and code highlighting
 code {
-	background: #fff;
+	display: block;
+	max-width: 100%;
+	overflow: scroll;
+	background: red;
 	color: #777;
 	padding: .2em;
 	border-radius: $border-radius;
