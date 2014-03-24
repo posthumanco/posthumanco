@@ -6,142 +6,143 @@ tags: [crystal meth, heroin]
 banner: /assets/images/glitch/IMG_4383-glitched-a0-s0-i1-q1.png
 ---
 
-<pre><code>
-		body {
-			//margin-top: 50px; for fixed header
-			color: rgb(77, 77, 77);
-			// @media #{$medium} {
-			// 	margin-top: 60px;
-			// }
-			// @media #{$large} {
-			// 	margin-top: 75px;
-			// }
-			h1, .h1 {
-				 text-transform: uppercase;
-			}
-			a {
+<i>Most of the time when we're caught up in work</i>, it's easy to get focused on getting it done and finished so you can move onto the next project, or be done working in general. Granted, some people love their jobs, but who wouldn't enjoy a bit of extra time in the day to do something leisurely? If your idea of leisure is more work, wouldn't it be nice to get projects done sooner so you can move on to the next one (and maybe earn some more cash)?
+
+{% highlight scss linenos %}
+$medium: medium; $medium: medium; $medium: medium; $medium: medium; $medium: medium; $medium: medium; $medium: medium; $medium: medium; $medium: medium; $medium: medium; $medium: medium; $medium: medium; 
+body {
+	//margin-top: 50px; for fixed header
+	color: rgb(77, 77, 77);
+	// @media #{$medium} {
+	// 	margin-top: 60px;
+	// }
+	// @media #{$large} {
+	// 	margin-top: 75px;
+	// }
+	h1, .h1 {
+		 text-transform: uppercase;
+	}
+	a {
+		@include transition;
+	}
+	small {
+		color: $disabled;
+		margin-bottom: -1em;
+	}
+	header {
+		&#header {
+			//position: fixed;
+			height: 50px;
+			//padding: 15px 0;
+			width: 100%;
+			background: rgb(26, 26, 26);
+			top: 0;
+			z-index: 1000;
+			overflow: hidden;
+			@include transition;
+			&.active {
+				height: 230px;
+				@media #{$medium} {
+					height: inherit;
+				}
 				@include transition;
 			}
-			small {
-				color: $disabled;
-				margin-bottom: -1em;
+			.ph-arrow-down {
+				color: white;
+				position: absolute;
+				top: 16px;
+				right: 26px;
+				z-index: 9999;
+				@media #{$medium}, #{$large} {
+					display: none;
+				}
 			}
-			header {
-				&#header {
-					//position: fixed;
-					height: 50px;
-					//padding: 15px 0;
-					width: 100%;
-					background: rgb(26, 26, 26);
-					top: 0;
-					z-index: 1000;
-					overflow: hidden;
-					@include transition;
-					&.active {
-						height: 230px;
+			nav {
+				ul {
+					&.pages {
+						float: left;
+						clear: both;
+						margin-bottom: 1em;
 						@media #{$medium} {
-							height: inherit;
-						}
-						@include transition;
-					}
-					.ph-arrow-down {
-						color: white;
-						position: absolute;
-						top: 16px;
-						right: 26px;
-						z-index: 9999;
-						@media #{$medium}, #{$large} {
-							display: none;
+							float: right;
+							clear: none;
+							margin-bottom: 0;
 						}
 					}
-					nav {
-						ul {
-							&.pages {
-								float: left;
-								clear: both;
-								margin-bottom: 1em;
-								@media #{$medium} {
-									float: right;
-									clear: none;
-									margin-bottom: 0;
-								}
+					li {
+						line-height: 1;
+						a {
+							color: white;
+							font-family: $h-font-family;font-family: $h-font-family;font-family: $h-font-family;font-family: $h-font-family;font-family: $h-font-family;font-family: $h-font-family;font-family: $h-font-family;font-family: $h-font-family;
+							text-transform: uppercase;
+							font-size: .8em;
+							font-weight: 300;
+							padding: 1em .5em;
+							display: block;
+							@media #{$medium} {
+								padding: 18px .5em;
+								font-size: 15px;
 							}
-							li {
-								line-height: 1;
-								a {
-									color: white;
-									font-family: $h-font-family;
-									text-transform: uppercase;
-									font-size: .8em;
-									font-weight: 300;
-									padding: 1em .5em;
-									display: block;
-									@media #{$medium} {
-										padding: 18px .5em;
-										font-size: 15px;
-									}
-									&:hover {
-										color: rgb(222, 222, 222);
-									}
-								}
-								&.logo {
-									.ph-posthuman_text {
-										stroke: 1;
-									}
-									@media #{$medium} {
-										display: inline-block;
-									}
-									a {
-										padding: 14px 0;
-										color: white;
-										font-size: 20px;
-										&:hover {
-											color: rgb(222, 222, 222);
-										}
-									}
+							&:hover {
+								color: rgb(222, 222, 222);
+							}
+						}
+						&.logo {
+							.ph-posthuman_text {
+								stroke: 1;
+							}
+							@media #{$medium} {
+								display: inline-block;
+							}
+							a {
+								padding: 14px 0;
+								color: white;
+								font-size: 20px;
+								&:hover {
+									color: rgb(222, 222, 222);
 								}
 							}
 						}
-					}
-				}
-			}
-			.content {
-				article {
-					margin-bottom: 4em;
-				}
-				&.index {
-					.h1 {
-						margin-bottom: .5em;
-					}
-					article {
-						p {
-							margin-bottom: 1em;
-						}
-					}
-					footer {
-						border: 0;
-						padding-top: 0;
-					}
-				}
-			}
-			footer {
-				border-top: 1px solid #d6d6d6;
-				padding-top: 1.5em;
-				font-size: .8em;
-				a {
-					text-transform: capitalize;
-					&:after {
-						content: ", ";
-					}
-					&:last-child:after {
-						content: "";
 					}
 				}
 			}
 		}
-</code></pre>
-
-<i>Most of the time when we're caught up in work</i>, it's easy to get focused on getting it done and finished so you can move onto the next project, or be done working in general. Granted, some people love their jobs, but who wouldn't enjoy a bit of extra time in the day to do something leisurely? If your idea of leisure is more work, wouldn't it be nice to get projects done sooner so you can move on to the next one (and maybe earn some more cash)?
+	}
+	.content {
+		article {
+			margin-bottom: 4em;
+		}
+		&.index {
+			.h1 {
+				margin-bottom: .5em;
+			}
+			article {
+				p {
+					margin-bottom: 1em;
+				}
+			}
+			footer {
+				border: 0;
+				padding-top: 0;
+			}
+		}
+	}
+	footer {
+		border-top: 1px solid #d6d6d6;
+		padding-top: 1.5em;
+		font-size: .8em;
+		a {
+			text-transform: capitalize;
+			&:after {
+				content: ", ";
+			}
+			&:last-child:after {
+				content: "";
+			}
+		}
+	}
+}
+{% endhighlight %}
 
 You may not think about this, but so many people get into bad or lazy habits that could be improved if you just did a bit of research. Think about how much time you spend every day looking for files you've thrown somewhere easy to access instead of doing it the first time, gone to 4 different sites to read your blogs, or had to look up some code you end up using on almost every site.
 

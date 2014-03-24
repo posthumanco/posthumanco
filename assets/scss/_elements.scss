@@ -150,25 +150,16 @@ dl {
 
 //Code and code highlighting
 code {
-	display: block;
+	// display: block;
 	max-width: 100%;
-	overflow: scroll;
-	background: red;
+	//overflow: scroll;
+	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+	font-size: .75em;
 	color: #777;
 	padding: .2em;
 	border-radius: $border-radius;
 	@media #{$small} {
 		padding: .1em;
-	}
-}
-
-.highlight {
-	@extend code;
-	padding: .5em;
-	// border: 1px solid #aaa;
-	code {
-		background: none;
-		white-space: pre-wrap;
 	}
 }
 
