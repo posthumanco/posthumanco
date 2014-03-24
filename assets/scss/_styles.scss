@@ -39,6 +39,11 @@ body {
 					height: inherit;
 				}
 				@include transition;
+				.ph-arrow-down {
+					transform: rotate(180deg);
+					-webkit-transform: rotate(180deg);
+					@include transition;
+				}
 			}
 			.ph-arrow-down {
 				color: white;
@@ -46,6 +51,7 @@ body {
 				top: 16px;
 				right: 26px;
 				z-index: 9999;
+				@include transition;
 				@media #{$medium}, #{$large} {
 					display: none;
 				}

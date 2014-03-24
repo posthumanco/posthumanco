@@ -11,8 +11,6 @@
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/app.css">
         <!-- jQuery -->
         <script src="{{ site.baseurl }}/assets/javascript/jquery-v2.0.3.min.js"></script>
-        <!-- JS -->
-        <script src="{{ site.baseurl }}/assets/javascript/scripts.js"></script>
         <!-- Typekit -->
         <script type="text/javascript" src="//use.typekit.net/qbs3wol.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -46,14 +44,6 @@
       <div class="row full-width collapse">
         {{ content }}
       </div>
-      <script type="text/javascript">
-        $(document).ready(
-          $('.menu-toggle').click(
-            function() {
-              $('#header').toggleClass('active')
-            }
-          )
-        )
-      </script>
+      <script src="{{ site.baseurl }}/assets/javascript/scripts.js"></script>
     </body>
 </html>
