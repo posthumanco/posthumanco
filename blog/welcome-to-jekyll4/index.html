@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="/posthumanco/assets/css/app.css">
         <!-- jQuery -->
         <script src="/posthumanco/assets/javascript/jquery-v2.0.3.min.js"></script>
+        <!-- JS -->
+        <script src="/posthumanco/assets/javascript/scripts.js"></script>
         <!-- Typekit -->
         <script type="text/javascript" src="//use.typekit.net/qbs3wol.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -55,142 +57,142 @@
 	  		<header>
 	  			<h1 class="text-center"><!-- <small><time pubdate="pubdate">19 Nov 2013</time></small> -->Weekly SASS Mixin</h1>
 	  		</header>
-			<pre><code>
-        body {
-            //margin-top: 50px; for fixed header
-            color: rgb(77, 77, 77);
-            // @media #{$medium} {
-            //  margin-top: 60px;
-            // }
-            // @media #{$large} {
-            //  margin-top: 75px;
-            // }
-            h1, .h1 {
-                 text-transform: uppercase;
-            }
-            a {
-                @include transition;
-            }
-            small {
-                color: $disabled;
-                margin-bottom: -1em;
-            }
-            header {
-                &#header {
-                    //position: fixed;
-                    height: 50px;
-                    //padding: 15px 0;
-                    width: 100%;
-                    background: rgb(26, 26, 26);
-                    top: 0;
-                    z-index: 1000;
-                    overflow: hidden;
-                    @include transition;
-                    &.active {
-                        height: 230px;
-                        @media #{$medium} {
-                            height: inherit;
-                        }
-                        @include transition;
-                    }
-                    .ph-arrow-down {
-                        color: white;
-                        position: absolute;
-                        top: 16px;
-                        right: 26px;
-                        z-index: 9999;
-                        @media #{$medium}, #{$large} {
-                            display: none;
-                        }
-                    }
-                    nav {
-                        ul {
-                            &.pages {
-                                float: left;
-                                clear: both;
-                                margin-bottom: 1em;
-                                @media #{$medium} {
-                                    float: right;
-                                    clear: none;
-                                    margin-bottom: 0;
-                                }
-                            }
-                            li {
-                                line-height: 1;
-                                a {
-                                    color: white;
-                                    font-family: $h-font-family;
-                                    text-transform: uppercase;
-                                    font-size: .8em;
-                                    font-weight: 300;
-                                    padding: 1em .5em;
-                                    display: block;
-                                    @media #{$medium} {
-                                        padding: 18px .5em;
-                                        font-size: 15px;
-                                    }
-                                    &:hover {
-                                        color: rgb(222, 222, 222);
-                                    }
-                                }
-                                &.logo {
-                                    .ph-posthuman_text {
-                                        stroke: 1;
-                                    }
-                                    @media #{$medium} {
-                                        display: inline-block;
-                                    }
-                                    a {
-                                        padding: 14px 0;
-                                        color: white;
-                                        font-size: 20px;
-                                        &:hover {
-                                            color: rgb(222, 222, 222);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .content {
-                article {
-                    margin-bottom: 4em;
-                }
-                &.index {
-                    .h1 {
-                        margin-bottom: .5em;
-                    }
-                    article {
-                        p {
-                            margin-bottom: 1em;
-                        }
-                    }
-                    footer {
-                        border: 0;
-                        padding-top: 0;
-                    }
-                }
-            }
-            footer {
-                border-top: 1px solid #d6d6d6;
-                padding-top: 1.5em;
-                font-size: .8em;
-                a {
-                    text-transform: capitalize;
-                    &:after {
-                        content: ", ";
-                    }
-                    &:last-child:after {
-                        content: "";
-                    }
-                }
-            }
-        }
-</code></pre>
+			<p><i>Most of the time when we&#39;re caught up in work</i>, it&#39;s easy to get focused on getting it done and finished so you can move onto the next project, or be done working in general. Granted, some people love their jobs, but who wouldn&#39;t enjoy a bit of extra time in the day to do something leisurely? If your idea of leisure is more work, wouldn&#39;t it be nice to get projects done sooner so you can move on to the next one (and maybe earn some more cash)?</p>
 
-<p><i>Most of the time when we&#39;re caught up in work</i>, it&#39;s easy to get focused on getting it done and finished so you can move onto the next project, or be done working in general. Granted, some people love their jobs, but who wouldn&#39;t enjoy a bit of extra time in the day to do something leisurely? If your idea of leisure is more work, wouldn&#39;t it be nice to get projects done sooner so you can move on to the next one (and maybe earn some more cash)?</p>
+<div class="highlight"><pre><code class="scss"><span class="lineno">  1</span> <span class="nv">$medium</span><span class="o">:</span> <span class="no">medium</span><span class="p">;</span> <span class="nv">$medium</span><span class="o">:</span> <span class="no">medium</span><span class="p">;</span> <span class="nv">$medium</span><span class="o">:</span> <span class="no">medium</span><span class="p">;</span> <span class="nv">$medium</span><span class="o">:</span> <span class="no">medium</span><span class="p">;</span> <span class="nv">$medium</span><span class="o">:</span> <span class="no">medium</span><span class="p">;</span> <span class="nv">$medium</span><span class="o">:</span> <span class="no">medium</span><span class="p">;</span> <span class="nv">$medium</span><span class="o">:</span> <span class="no">medium</span><span class="p">;</span> <span class="nv">$medium</span><span class="o">:</span> <span class="no">medium</span><span class="p">;</span> <span class="nv">$medium</span><span class="o">:</span> <span class="no">medium</span><span class="p">;</span> <span class="nv">$medium</span><span class="o">:</span> <span class="no">medium</span><span class="p">;</span> <span class="nv">$medium</span><span class="o">:</span> <span class="no">medium</span><span class="p">;</span> <span class="nv">$medium</span><span class="o">:</span> <span class="no">medium</span><span class="p">;</span> 
+<span class="lineno">  2</span> <span class="nt">body</span> <span class="p">{</span>
+<span class="lineno">  3</span>     <span class="c1">//margin-top: 50px; for fixed header</span>
+<span class="lineno">  4</span>     <span class="na">color</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">77</span><span class="o">,</span> <span class="mi">77</span><span class="o">,</span> <span class="mi">77</span><span class="p">);</span>
+<span class="lineno">  5</span>     <span class="c1">// @media #{$medium} {</span>
+<span class="lineno">  6</span>     <span class="c1">//     margin-top: 60px;</span>
+<span class="lineno">  7</span>     <span class="c1">// }</span>
+<span class="lineno">  8</span>     <span class="c1">// @media #{$large} {</span>
+<span class="lineno">  9</span>     <span class="c1">//     margin-top: 75px;</span>
+<span class="lineno"> 10</span>     <span class="c1">// }</span>
+<span class="lineno"> 11</span>     <span class="nt">h1</span><span class="o">,</span> <span class="nc">.h1</span> <span class="p">{</span>
+<span class="lineno"> 12</span>          <span class="na">text-transform</span><span class="o">:</span> <span class="no">uppercase</span><span class="p">;</span>
+<span class="lineno"> 13</span>     <span class="p">}</span>
+<span class="lineno"> 14</span>     <span class="nt">a</span> <span class="p">{</span>
+<span class="lineno"> 15</span>         <span class="k">@include</span><span class="nd"> transition</span><span class="p">;</span>
+<span class="lineno"> 16</span>     <span class="p">}</span>
+<span class="lineno"> 17</span>     <span class="nt">small</span> <span class="p">{</span>
+<span class="lineno"> 18</span>         <span class="na">color</span><span class="o">:</span> <span class="nv">$disabled</span><span class="p">;</span>
+<span class="lineno"> 19</span>         <span class="na">margin-bottom</span><span class="o">:</span> <span class="mi">-1</span><span class="kt">em</span><span class="p">;</span>
+<span class="lineno"> 20</span>     <span class="p">}</span>
+<span class="lineno"> 21</span>     <span class="nt">header</span> <span class="p">{</span>
+<span class="lineno"> 22</span>         <span class="k">&amp;</span><span class="nn">#header</span> <span class="p">{</span>
+<span class="lineno"> 23</span>             <span class="c1">//position: fixed;</span>
+<span class="lineno"> 24</span>             <span class="na">height</span><span class="o">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+<span class="lineno"> 25</span>             <span class="c1">//padding: 15px 0;</span>
+<span class="lineno"> 26</span>             <span class="na">width</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="lineno"> 27</span>             <span class="na">background</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">26</span><span class="o">,</span> <span class="mi">26</span><span class="o">,</span> <span class="mi">26</span><span class="p">);</span>
+<span class="lineno"> 28</span>             <span class="na">top</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="lineno"> 29</span>             <span class="na">z-index</span><span class="o">:</span> <span class="mi">1000</span><span class="p">;</span>
+<span class="lineno"> 30</span>             <span class="na">overflow</span><span class="o">:</span> <span class="no">hidden</span><span class="p">;</span>
+<span class="lineno"> 31</span>             <span class="k">@include</span><span class="nd"> transition</span><span class="p">;</span>
+<span class="lineno"> 32</span>             <span class="k">&amp;</span><span class="nc">.active</span> <span class="p">{</span>
+<span class="lineno"> 33</span>                 <span class="na">height</span><span class="o">:</span> <span class="mi">230</span><span class="kt">px</span><span class="p">;</span>
+<span class="lineno"> 34</span>                 <span class="k">@media</span> <span class="nn">#</span><span class="p">{</span><span class="err">$</span><span class="nt">medium</span><span class="p">}</span> <span class="p">{</span>
+<span class="lineno"> 35</span>                     <span class="na">height</span><span class="o">:</span> <span class="no">inherit</span><span class="p">;</span>
+<span class="lineno"> 36</span>                 <span class="p">}</span>
+<span class="lineno"> 37</span>                 <span class="k">@include</span><span class="nd"> transition</span><span class="p">;</span>
+<span class="lineno"> 38</span>             <span class="p">}</span>
+<span class="lineno"> 39</span>             <span class="nc">.ph-arrow-down</span> <span class="p">{</span>
+<span class="lineno"> 40</span>                 <span class="na">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+<span class="lineno"> 41</span>                 <span class="na">position</span><span class="o">:</span> <span class="no">absolute</span><span class="p">;</span>
+<span class="lineno"> 42</span>                 <span class="na">top</span><span class="o">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+<span class="lineno"> 43</span>                 <span class="na">right</span><span class="o">:</span> <span class="mi">26</span><span class="kt">px</span><span class="p">;</span>
+<span class="lineno"> 44</span>                 <span class="na">z-index</span><span class="o">:</span> <span class="mi">9999</span><span class="p">;</span>
+<span class="lineno"> 45</span>                 <span class="k">@media</span> <span class="nn">#</span><span class="p">{</span><span class="err">$</span><span class="nt">medium</span><span class="p">}</span><span class="o">,</span> <span class="nn">#</span><span class="p">{</span><span class="err">$</span><span class="nt">large</span><span class="p">}</span> <span class="p">{</span>
+<span class="lineno"> 46</span>                     <span class="na">display</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
+<span class="lineno"> 47</span>                 <span class="p">}</span>
+<span class="lineno"> 48</span>             <span class="p">}</span>
+<span class="lineno"> 49</span>             <span class="nt">nav</span> <span class="p">{</span>
+<span class="lineno"> 50</span>                 <span class="nt">ul</span> <span class="p">{</span>
+<span class="lineno"> 51</span>                     <span class="k">&amp;</span><span class="nc">.pages</span> <span class="p">{</span>
+<span class="lineno"> 52</span>                         <span class="na">float</span><span class="o">:</span> <span class="no">left</span><span class="p">;</span>
+<span class="lineno"> 53</span>                         <span class="na">clear</span><span class="o">:</span> <span class="no">both</span><span class="p">;</span>
+<span class="lineno"> 54</span>                         <span class="na">margin-bottom</span><span class="o">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+<span class="lineno"> 55</span>                         <span class="k">@media</span> <span class="nn">#</span><span class="p">{</span><span class="err">$</span><span class="nt">medium</span><span class="p">}</span> <span class="p">{</span>
+<span class="lineno"> 56</span>                             <span class="na">float</span><span class="o">:</span> <span class="no">right</span><span class="p">;</span>
+<span class="lineno"> 57</span>                             <span class="na">clear</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
+<span class="lineno"> 58</span>                             <span class="na">margin-bottom</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="lineno"> 59</span>                         <span class="p">}</span>
+<span class="lineno"> 60</span>                     <span class="p">}</span>
+<span class="lineno"> 61</span>                     <span class="nt">li</span> <span class="p">{</span>
+<span class="lineno"> 62</span>                         <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="p">;</span>
+<span class="lineno"> 63</span>                         <span class="nt">a</span> <span class="p">{</span>
+<span class="lineno"> 64</span>                             <span class="na">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+<span class="lineno"> 65</span>                             <span class="na">font-family</span><span class="o">:</span> <span class="nv">$h-font-family</span><span class="p">;</span><span class="na">font-family</span><span class="o">:</span> <span class="nv">$h-font-family</span><span class="p">;</span><span class="na">font-family</span><span class="o">:</span> <span class="nv">$h-font-family</span><span class="p">;</span><span class="na">font-family</span><span class="o">:</span> <span class="nv">$h-font-family</span><span class="p">;</span><span class="na">font-family</span><span class="o">:</span> <span class="nv">$h-font-family</span><span class="p">;</span><span class="na">font-family</span><span class="o">:</span> <span class="nv">$h-font-family</span><span class="p">;</span><span class="na">font-family</span><span class="o">:</span> <span class="nv">$h-font-family</span><span class="p">;</span><span class="na">font-family</span><span class="o">:</span> <span class="nv">$h-font-family</span><span class="p">;</span>
+<span class="lineno"> 66</span>                             <span class="na">text-transform</span><span class="o">:</span> <span class="no">uppercase</span><span class="p">;</span>
+<span class="lineno"> 67</span>                             <span class="na">font-size</span><span class="o">:</span> <span class="mf">.8</span><span class="kt">em</span><span class="p">;</span>
+<span class="lineno"> 68</span>                             <span class="na">font-weight</span><span class="o">:</span> <span class="mi">300</span><span class="p">;</span>
+<span class="lineno"> 69</span>                             <span class="na">padding</span><span class="o">:</span> <span class="mi">1</span><span class="kt">em</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
+<span class="lineno"> 70</span>                             <span class="na">display</span><span class="o">:</span> <span class="no">block</span><span class="p">;</span>
+<span class="lineno"> 71</span>                             <span class="k">@media</span> <span class="nn">#</span><span class="p">{</span><span class="err">$</span><span class="nt">medium</span><span class="p">}</span> <span class="p">{</span>
+<span class="lineno"> 72</span>                                 <span class="na">padding</span><span class="o">:</span> <span class="mi">18</span><span class="kt">px</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
+<span class="lineno"> 73</span>                                 <span class="na">font-size</span><span class="o">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+<span class="lineno"> 74</span>                             <span class="p">}</span>
+<span class="lineno"> 75</span>                             <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+<span class="lineno"> 76</span>                                 <span class="na">color</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">222</span><span class="o">,</span> <span class="mi">222</span><span class="o">,</span> <span class="mi">222</span><span class="p">);</span>
+<span class="lineno"> 77</span>                             <span class="p">}</span>
+<span class="lineno"> 78</span>                         <span class="p">}</span>
+<span class="lineno"> 79</span>                         <span class="k">&amp;</span><span class="nc">.logo</span> <span class="p">{</span>
+<span class="lineno"> 80</span>                             <span class="nc">.ph-posthuman_text</span> <span class="p">{</span>
+<span class="lineno"> 81</span>                                 <span class="na">stroke</span><span class="o">:</span> <span class="mi">1</span><span class="p">;</span>
+<span class="lineno"> 82</span>                             <span class="p">}</span>
+<span class="lineno"> 83</span>                             <span class="k">@media</span> <span class="nn">#</span><span class="p">{</span><span class="err">$</span><span class="nt">medium</span><span class="p">}</span> <span class="p">{</span>
+<span class="lineno"> 84</span>                                 <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="o">-</span><span class="no">block</span><span class="p">;</span>
+<span class="lineno"> 85</span>                             <span class="p">}</span>
+<span class="lineno"> 86</span>                             <span class="nt">a</span> <span class="p">{</span>
+<span class="lineno"> 87</span>                                 <span class="na">padding</span><span class="o">:</span> <span class="mi">14</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
+<span class="lineno"> 88</span>                                 <span class="na">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+<span class="lineno"> 89</span>                                 <span class="na">font-size</span><span class="o">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="lineno"> 90</span>                                 <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+<span class="lineno"> 91</span>                                     <span class="na">color</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">222</span><span class="o">,</span> <span class="mi">222</span><span class="o">,</span> <span class="mi">222</span><span class="p">);</span>
+<span class="lineno"> 92</span>                                 <span class="p">}</span>
+<span class="lineno"> 93</span>                             <span class="p">}</span>
+<span class="lineno"> 94</span>                         <span class="p">}</span>
+<span class="lineno"> 95</span>                     <span class="p">}</span>
+<span class="lineno"> 96</span>                 <span class="p">}</span>
+<span class="lineno"> 97</span>             <span class="p">}</span>
+<span class="lineno"> 98</span>         <span class="p">}</span>
+<span class="lineno"> 99</span>     <span class="p">}</span>
+<span class="lineno">100</span>     <span class="nc">.content</span> <span class="p">{</span>
+<span class="lineno">101</span>         <span class="nt">article</span> <span class="p">{</span>
+<span class="lineno">102</span>             <span class="na">margin-bottom</span><span class="o">:</span> <span class="mi">4</span><span class="kt">em</span><span class="p">;</span>
+<span class="lineno">103</span>         <span class="p">}</span>
+<span class="lineno">104</span>         <span class="k">&amp;</span><span class="nc">.index</span> <span class="p">{</span>
+<span class="lineno">105</span>             <span class="nc">.h1</span> <span class="p">{</span>
+<span class="lineno">106</span>                 <span class="na">margin-bottom</span><span class="o">:</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
+<span class="lineno">107</span>             <span class="p">}</span>
+<span class="lineno">108</span>             <span class="nt">article</span> <span class="p">{</span>
+<span class="lineno">109</span>                 <span class="nt">p</span> <span class="p">{</span>
+<span class="lineno">110</span>                     <span class="na">margin-bottom</span><span class="o">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+<span class="lineno">111</span>                 <span class="p">}</span>
+<span class="lineno">112</span>             <span class="p">}</span>
+<span class="lineno">113</span>             <span class="nt">footer</span> <span class="p">{</span>
+<span class="lineno">114</span>                 <span class="na">border</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="lineno">115</span>                 <span class="na">padding-top</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="lineno">116</span>             <span class="p">}</span>
+<span class="lineno">117</span>         <span class="p">}</span>
+<span class="lineno">118</span>     <span class="p">}</span>
+<span class="lineno">119</span>     <span class="nt">footer</span> <span class="p">{</span>
+<span class="lineno">120</span>         <span class="na">border-top</span><span class="o">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="no">solid</span> <span class="mh">#d6d6d6</span><span class="p">;</span>
+<span class="lineno">121</span>         <span class="na">padding-top</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
+<span class="lineno">122</span>         <span class="na">font-size</span><span class="o">:</span> <span class="mf">.8</span><span class="kt">em</span><span class="p">;</span>
+<span class="lineno">123</span>         <span class="nt">a</span> <span class="p">{</span>
+<span class="lineno">124</span>             <span class="na">text-transform</span><span class="o">:</span> <span class="no">capitalize</span><span class="p">;</span>
+<span class="lineno">125</span>             <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
+<span class="lineno">126</span>                 <span class="na">content</span><span class="o">:</span> <span class="s2">&quot;, &quot;</span><span class="p">;</span>
+<span class="lineno">127</span>             <span class="p">}</span>
+<span class="lineno">128</span>             <span class="k">&amp;</span><span class="nd">:last-child:after</span> <span class="p">{</span>
+<span class="lineno">129</span>                 <span class="na">content</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="lineno">130</span>             <span class="p">}</span>
+<span class="lineno">131</span>         <span class="p">}</span>
+<span class="lineno">132</span>     <span class="p">}</span>
+<span class="lineno">133</span> <span class="p">}</span>
+</code></pre></div>
 
 <p>You may not think about this, but so many people get into bad or lazy habits that could be improved if you just did a bit of research. Think about how much time you spend every day looking for files you&#39;ve thrown somewhere easy to access instead of doing it the first time, gone to 4 different sites to read your blogs, or had to look up some code you end up using on almost every site.</p>
 
