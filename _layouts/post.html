@@ -5,15 +5,15 @@ layout: default
 	<article>
 		{% if page.banner != %}
 			<div class="row collapse banner">
-				<div class="small-12 columns">
-					<img src="{{ site.baseurl }}{{ page.banner }}">
-				</div>
+				<div class="screen-11 screen-centered small-8 small-centered medium-7 medium-centered large-6 large-centered extra-large-5 extra-large-centered columns">
+					<header>
+	  					<h1>{{ page.title }}<small><time pubdate="pubdate">{{ page.date | date_to_string }}</time></small></h1>
+	  				</header>
+	  			</div>
 			</div>
 		{% endif %}
 		<div class="screen-11 screen-centered small-8 small-centered medium-7 medium-centered large-6 large-centered extra-large-5 extra-large-centered columns">
-	  		<header>
-	  			<h1 class="text-center"><!-- <small><time pubdate="pubdate">{{ page.date | date_to_string }}</time></small> -->{{ page.title }}</h1>
-	  		</header>
+			<!-- <h1 class="text-center"><small><time pubdate="pubdate">{{ page.date | date_to_string }}</time></small>{{ page.title }}</h1> -->
 			{{ content }}
 			<footer>
 				{% if page.tags != empty %}
