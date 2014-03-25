@@ -1064,7 +1064,7 @@ code, nav.pagination ul li, .highlight {
 
 blockquote {
   padding-left: 10px;
-  border-left: 5px solid #dedede; }
+  border-left: 5px solid #f1f1f1; }
 
 cite {
   font-style: italic;
@@ -1104,9 +1104,9 @@ button, a.button, input[type=submit] {
     button.secondary:hover, a.button.secondary:hover, input[type=submit].secondary:hover {
       background: #00ba60; }
   button.disabled, a.button.disabled, input[type=submit].disabled {
-    background: #dedede; }
+    background: #f1f1f1; }
     button.disabled:hover, a.button.disabled:hover, input[type=submit].disabled:hover {
-      background: #d9d9d9; }
+      background: #ececec; }
   button.alert, a.button.alert, input[type=submit].alert {
     background: #ff362a; }
     button.alert:hover, a.button.alert:hover, input[type=submit].alert:hover {
@@ -1131,9 +1131,9 @@ a {
     a.secondary:hover {
       color: #00ba60; }
   a.disabled {
-    color: #dedede; }
+    color: #f1f1f1; }
     a.disabled:hover {
-      color: #d9d9d9; }
+      color: #ececec; }
   a.alert {
     color: #ff362a; }
     a.alert:hover {
@@ -1162,7 +1162,7 @@ body {
     -webkit-transition: color 0.5s, height 0.5s, -webkit-transform 0.5s;
     -moz-transition: color 0.5s, height 0.5s, -moz-transform 0.5s; }
   body small {
-    color: #dedede;
+    color: #cbcbcb;
     margin-bottom: -1em; }
   body header#header {
     height: 50px;
@@ -1257,23 +1257,35 @@ body {
         content: ""; }
 
 .banner {
-  margin-bottom: 3em;
-  max-height: 150px;
+  margin: 0 0 1.5em 0;
+  min-height: 150px;
+  height: auto;
   overflow: hidden;
-  background-color: #dedede;
+  background-color: #f1f1f1;
+  padding: 4em 0 .5em 0;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 5px 0; }
+  position: relative; }
+  .banner.fixed {
+    max-height: 150px;
+    padding: .5em 0; }
+    @media only screen and (min-width: 768px) {
+      .banner.fixed {
+        max-height: 300px; } }
   @media only screen and (min-width: 768px) {
     .banner {
-      max-height: 300px;
-      padding: 15px 0; } }
-  .banner img {
-    max-width: 100%;
-    width: 100%;
-    display: block;
-    margin-top: -15px; }
+      height: auto;
+      min-height: 200px; } }
+  .banner header {
+    padding: 0 2%;
+    display: table-cell;
+    vertical-align: bottom;
+    color: black; }
+    .banner header h1 {
+      font-size: 2em;
+      font-weight: 500;
+      line-height: 1; }
 
 .demo .row {
   margin: .2em auto; }
@@ -1382,8 +1394,8 @@ ul.tags {
     position: absolute;
     right: 1%;
     background: #dedede;
-    margin: -6px 0 0 0;
-    padding: .45em; }
+    margin: -7px 0 0 0;
+    padding: .54em; }
     @media only screen and (min-width: 600px) {
       .highlight:before {
         display: none; } }
