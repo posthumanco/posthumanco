@@ -999,7 +999,7 @@ h6, .h6 {
 i {
   font-style: italic; }
 
-p {
+p, ul, ul li ul, ol li ul, ol, ul li ol, ol li ol, dl, ul li dl, ol li dl {
   margin: 0 0 1.5em 0;
   font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
@@ -1182,12 +1182,21 @@ body {
       @media only screen and (min-width: 768px) {
         body header#header.active {
           height: inherit; } }
+      body header#header.active .ph-arrow-down {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transition: color 0.5s, height 0.5s, transform 0.5s;
+        -webkit-transition: color 0.5s, height 0.5s, -webkit-transform 0.5s;
+        -moz-transition: color 0.5s, height 0.5s, -moz-transform 0.5s; }
     body header#header .ph-arrow-down {
       color: white;
       position: absolute;
       top: 16px;
       right: 26px;
-      z-index: 9999; }
+      z-index: 9999;
+      transition: color 0.5s, height 0.5s, transform 0.5s;
+      -webkit-transition: color 0.5s, height 0.5s, -webkit-transform 0.5s;
+      -moz-transition: color 0.5s, height 0.5s, -moz-transform 0.5s; }
       @media only screen and (min-width: 768px), only screen and (min-width: 1024px) {
         body header#header .ph-arrow-down {
           display: none; } }
@@ -1395,7 +1404,8 @@ ul.tags {
         .highlight.expand:before {
           display: none !important; } }
     .highlight.expand code, .highlight.expand nav.pagination ul li, nav.pagination ul .highlight.expand li, .highlight.expand .highlight {
-      white-space: pre !important; }
+      white-space: pre !important;
+      -webkit-white-space: pre !important; }
   .highlight pre {
     overflow-x: scroll;
     overflow-y: hidden; }
@@ -1403,7 +1413,8 @@ ul.tags {
     white-space: nowrap; }
     @media only screen and (min-width: 600px) {
       .highlight code, .highlight nav.pagination ul li, nav.pagination ul .highlight li, .highlight .highlight {
-        white-space: pre; } }
+        white-space: pre;
+        -webkit-white-space: pre; } }
   .highlight .lineno {
     position: absolute;
     background-color: #49483e;
