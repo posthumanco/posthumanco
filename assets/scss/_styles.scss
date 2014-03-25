@@ -3,6 +3,16 @@
 		-webkit-transition: color $duration, height $duration, -webkit-transform $duration;
 		-moz-transition: color $duration, height $duration, -moz-transform $duration;
 }
+@mixin background-gradient($imageurl, $primarycolor, $secondarycolor ) {
+	background: $primarycolor;
+	background-image: url($imageurl); /* fallback */
+	background-image: url($imageurl), -webkit-gradient(linear, left top, left bottom, from($primarycolor), to($secondarycolor, $primarycolor)); /* Saf4+, Chrome */
+	background-image: url($imageurl), -webkit-linear-gradient(top, $primarycolor, $secondarycolor, $primarycolor); /* Chrome 10+, Saf5.1+ */
+	background-image: url($imageurl),    -moz-linear-gradient(top, $primarycolor, $secondarycolor, $primarycolor); /* FF3.6+ */
+	background-image: url($imageurl),     -ms-linear-gradient(top, $primarycolor, $secondarycolor, $primarycolor); /* IE10 */
+	background-image: url($imageurl),      -o-linear-gradient(top, $primarycolor, $secondarycolor, $primarycolor); /* Opera 11.10+ */
+	background-image: url($imageurl),         linear-gradient(to bottom, $primarycolor, $secondarycolor, $primarycolor); /* W3C */
+}
 body {
 	//margin-top: 50px; for fixed header
 	color: rgb(77, 77, 77);
