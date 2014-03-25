@@ -34,6 +34,7 @@
 		}
 		code {
 			white-space: pre !important;
+			-webkit-white-space: pre !important;
 		}
 	}
 	pre {
@@ -44,6 +45,7 @@
 		white-space: nowrap;
 		@media #{$small} {
 			white-space: pre;
+			-webkit-white-space: pre;
 		}
 	}
 	.lineno {
