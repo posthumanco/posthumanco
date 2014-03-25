@@ -89,7 +89,7 @@ i {
 	font-style: italic;
 }
 
-p {
+p, ul, ol, dl {
 	margin: $p-margin;
 	font-family: $content-font-family;
 	font-size: $content-font-size;
