@@ -1000,7 +1000,7 @@ h6, .h6 {
 i {
   font-style: italic; }
 
-p {
+p, ul, ul li ul, ol li ul, ol, ul li ol, ol li ol, dl, ul li dl, ol li dl {
   margin: 0 0 1.5em 0;
   font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
