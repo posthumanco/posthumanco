@@ -7,19 +7,18 @@ layout: default
 			<div class="row collapse banner" style="background-image: url({{ site.baseurl }}{{ page.banner }});">
 				<div class="screen-11 screen-centered small-8 small-centered medium-7 medium-centered large-6 large-centered extra-large-5 extra-large-centered columns">
 					<header>
-	  					<h1>{{ page.title }}<small><time pubdate="pubdate">{{ page.date | date_to_string }}</time></small></h1>
+	  					<h1>{{ page.title }}<small><time datetime="{{ page.date | date: '%B %d, %Y' }}">{{ page.date | date: '%B %d, %Y' }}</time></small></h1>
 	  				</header>
 	  			</div>
 			</div>
 		{% endif %}
 		<div class="screen-11 screen-centered small-8 small-centered medium-7 medium-centered large-6 large-centered extra-large-5 extra-large-centered columns">
-			<!-- <h1 class="text-center"><small><time pubdate="pubdate">{{ page.date | date_to_string }}</time></small>{{ page.title }}</h1> -->
 			{{ content }}
 			<footer>
 				{% if page.tags != empty %}
 					<p>Tags: 
 					{% for tag in page.tags %}
-						<a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
+						<a href="{{ site.baseurl }}/tag/{{ tag | replace:' ', '%20' }}">{{ tag }}</a>
 					{% endfor %}
 					</p>
 				{% endif %}

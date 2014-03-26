@@ -2,6 +2,7 @@
 layout: post
 title:  "Weekly SASS Mixin and a bunch of other unimoprtant shit"
 date:   2013-11-19 11:00:00
+author: Dustin Armstrong
 tags: [crystal meth, heroin]
 banner: /assets/images/glitch/IMG_4383-glitched-a0-s0-i1-q1.png
 ---

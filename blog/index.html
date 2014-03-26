@@ -13,16 +13,9 @@ banner: /assets/images/IMG_6588.jpg
 	</div>
 	{% for post in paginator.posts %}
 		<article>
-			<!-- {% if post.banner != %}
-				<div class="row collapse banner">
-					<div class="small-12 columns">
-						<img src="{{ post.banner }}">
-					</div>
-				</div>
-			{% endif %} -->
 			<div class="screen-11 screen-centered small-8 small-centered medium-7 medium-centered large-6 large-centered extra-large-5 extra-large-centered columns">
 		  		<header>
-		  			<h2 class="h1"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><!-- <small><time pubdate="pubdate">{{ post.date | date_to_string }}</time></small> --></h2>
+		  			<h2 class="h1"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><small><time pubdate="pubdate">{{ post.date | date_to_string }}</time></small></h2>
 		  		</header>
 				{{ post.excerpt }}
 				<footer>

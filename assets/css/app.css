@@ -1084,7 +1084,7 @@ button, a.button, input[type=submit] {
   border-radius: 2px;
   color: white !important; }
   button:hover, a.button:hover, input[type=submit]:hover {
-    background: #242424; }
+    background: #8a8a8a; }
   button.tiny, a.button.tiny, input[type=submit].tiny {
     padding: 0.5em;
     font-size: 0.7em; }
@@ -1099,7 +1099,7 @@ button, a.button, input[type=submit] {
   button.primary, a.button.primary, input[type=submit].primary {
     background: #0a0a0a; }
     button.primary:hover, a.button.primary:hover, input[type=submit].primary:hover {
-      background: #242424; }
+      background: #8a8a8a; }
   button.secondary, a.button.secondary, input[type=submit].secondary {
     background: #00ed7a; }
     button.secondary:hover, a.button.secondary:hover, input[type=submit].secondary:hover {
@@ -1116,17 +1116,18 @@ button, a.button, input[type=submit] {
 a {
   color: #0a0a0a;
   text-decoration: none;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 12%, black 12%, black 16%, rgba(0, 0, 0, 0) 16%);
   font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
-  font-weight: 500; }
+  font-weight: 400; }
   a:visited {
     color: #0a0a0a; }
   a:hover {
-    color: #242424; }
+    color: #8a8a8a; }
   a.primary {
     color: #0a0a0a; }
     a.primary:hover {
-      color: #242424; }
+      color: #8a8a8a; }
   a.secondary {
     color: #00ed7a; }
     a.secondary:hover {
@@ -1152,10 +1153,13 @@ nav ul, nav ul li ul, ul li nav ul, nav ol li ul, ol li nav ul {
       nav ul li {
         display: inline-block; } }
     nav ul li a {
-      font-weight: 300; }
+      font-weight: 300;
+      background-image: none; }
 
 body {
   color: #4d4d4d; }
+  body h1 a, body h2 a, body h3 a, body h4 a, body h5 a, body h6 a {
+    background-image: none; }
   body h1, body .h1 {
     text-transform: uppercase; }
   body a {

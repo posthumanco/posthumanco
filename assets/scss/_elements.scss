@@ -228,9 +228,10 @@ $button-font-size: 1em !default;
 	a {
 		color: $primary;
 		text-decoration: none;
+		background-image: linear-gradient(to top, rgba(0,0,0,0) 12%, rgba(0,0,0,1) 12%, rgba(0,0,0,1) 16%, rgba(0,0,0,0) 16%);
 		font-family: $content-font-family;
 		font-size: $content-font-size;
-		font-weight: 500;
+		font-weight: 400;
 		&:visited {
 			color: $primary;
 		}
@@ -275,6 +276,7 @@ nav {
 			}
 			a {
 				font-weight: $content-font-weight;
+				background-image: none;
 			}
 		}
 	}

@@ -21,8 +21,13 @@ body {
 	// @media #{$large} {
 	// 	margin-top: 75px;
 	// }
+	h1, h2, h3, h4, h5, h6 {
+		a {
+			background-image: none;
+		}
+	}
 	h1, .h1 {
-		 text-transform: uppercase;
+		text-transform: uppercase;
 	}
 	a {
 		@include transition;
