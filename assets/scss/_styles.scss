@@ -123,7 +123,22 @@ body {
 	}
 	.content {
 		article {
-			margin-bottom: 4em;
+			margin-bottom: 3em;
+			footer {
+				border-top: 1px solid #d6d6d6;
+				padding-top: 1.5em;
+				font-size: .8em;
+				a {
+					text-transform: capitalize;
+					&:after {
+						content: ", ";
+						background: white;
+					}
+					&:last-child:after {
+						content: "";
+					}
+				}
+			}
 		}
 		&.index {
 			.h1 {
@@ -141,17 +156,9 @@ body {
 		}
 	}
 	footer {
-		border-top: 1px solid #d6d6d6;
-		padding-top: 1.5em;
-		font-size: .8em;
-		a {
-			text-transform: capitalize;
-			&:after {
-				content: ", ";
-			}
-			&:last-child:after {
-				content: "";
-			}
+		&.footer {
+			height: 50px;
+			background: $primary;
 		}
 	}
 }
@@ -231,7 +238,7 @@ body {
 
 
 nav.pagination {
-	// margin-bottom: 3em;
+	margin-bottom: 3em;
 	ul {
 		vertical-align: middle;
 		font-family: $h-font-family;
@@ -240,14 +247,6 @@ nav.pagination {
 			@extend code;
 			padding: .3em;
 			display: inline-block;
-			&:first-child {
-				
-			}
-			&:hover {
-				a {
-					color: red;
-				}
-			}
 		}
 	}
 }
@@ -257,7 +256,7 @@ h1.tags {
 }
 
 ul.tags {
-	margin: 0;
+	margin: 0 10px;
 	text-transform: capitalize;
 	li {
 		list-style-type: none;

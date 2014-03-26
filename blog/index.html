@@ -26,36 +26,7 @@ banner: /assets/images/IMG_6588.jpg
 	{% endfor %}
 	<div class="row">
 		<div class="screen-11 screen-centered small-8 small-centered medium-7 medium-centered large-6 large-centered extra-large-5 extra-large-centered columns">
-			<nav class="pagination">
-				<ul>
-				{% if paginator.previous_page %}
-					{% if paginator.previous_page == 1 %}
-					<li><a href="{{ site.baseurl }}">&laquo; Newer</a></li>
-					{% else %}
-					<li><a href="{{ site.baseurl }}/page{{ paginator.previous_page }}">&laquo; Newer</a></li>
-					{% endif %}
-				{% else %}
-				{% endif %}
-				{% if paginator.page == 1 %}
-					{% if paginator.page != paginator.total_pages %}
-						<li><span class="active">1</span></li>
-					{% endif %}
-				{% else %}
-					<li><a href="{{ site.baseurl }}">1</a></li>
-				{% endif %}
-				{% for count in (2..paginator.total_pages) %}
-					{% if count == paginator.page %}
-					<li><span class="active">{{ count }}</span></li>
-					{% else %}
-					<li><a href="{{ site.baseurl }}/page{{ count }}">{{ count }}</a></li>
-					{% endif %}
-				{% endfor %}
-				{% if paginator.next_page %}
-				<li><a href="{{ site.baseurl }}/page{{ paginator.next_page }}">Older &raquo;</a></li>
-				{% else %}
-				{% endif %}
-				</ul>
-			</nav>
+			{% include pagination.html %}
 		</div>
 	</div>
 </div>

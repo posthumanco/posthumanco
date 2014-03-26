@@ -1242,7 +1242,18 @@ body {
         body header#header nav ul li.logo a:hover {
           color: #dedede; }
   body .content article {
-    margin-bottom: 4em; }
+    margin-bottom: 3em; }
+    body .content article footer {
+      border-top: 1px solid #d6d6d6;
+      padding-top: 1.5em;
+      font-size: .8em; }
+      body .content article footer a {
+        text-transform: capitalize; }
+        body .content article footer a:after {
+          content: ", ";
+          background: white; }
+        body .content article footer a:last-child:after {
+          content: ""; }
   body .content.index .h1 {
     margin-bottom: .5em; }
   body .content.index article p {
@@ -1250,16 +1261,9 @@ body {
   body .content.index footer {
     border: 0;
     padding-top: 0; }
-  body footer {
-    border-top: 1px solid #d6d6d6;
-    padding-top: 1.5em;
-    font-size: .8em; }
-    body footer a {
-      text-transform: capitalize; }
-      body footer a:after {
-        content: ", "; }
-      body footer a:last-child:after {
-        content: ""; }
+  body footer.footer {
+    height: 50px;
+    background: #0a0a0a; }
 
 .banner {
   margin: 0 0 1.5em 0;
@@ -1330,21 +1334,21 @@ body {
     color: #777;
     padding: .5em; }
 
-nav.pagination ul {
-  vertical-align: middle;
-  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  margin-left: 0; }
-  nav.pagination ul li {
-    padding: .3em;
-    display: inline-block; }
-    nav.pagination ul li:hover a {
-      color: red; }
+nav.pagination {
+  margin-bottom: 3em; }
+  nav.pagination ul {
+    vertical-align: middle;
+    font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin-left: 0; }
+    nav.pagination ul li {
+      padding: .3em;
+      display: inline-block; }
 
 h1.tags {
   text-transform: capitalize; }
 
 ul.tags {
-  margin: 0;
+  margin: 0 10px;
   text-transform: capitalize; }
   ul.tags li {
     list-style-type: none; }
