@@ -1,13 +1,14 @@
 ---
 layout: default
 title: Posthuman - Blog
-<!-- banner: /assets/images/IMG_6588.jpg -->
+banner: /assets/images/IMG_6588.jpg
 ---
 
 <div class="content index">
 	<div class="row collapse banner fixed" style="background-image:url({{ site.baseurl }}{{ page.banner }});">
 		<div class="screen-12 columns">
-			{% include eye.html %}
+			<object data="{{ site.baseurl }}/assets/svg/pheye-live.svg" type="image/svg+xml" class="pheye">
+			</object>
 		</div>
 	</div>
 	{% for post in paginator.posts %}

@@ -1,5 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Gentium+Book+Basic:400,700,400italic,700italic);
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, nav.pagination ul li, .highlight, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, ul li dl, ol li dl, dt, dd, ol, ul li ol, ol li ol, ul, ul li ul, ol li ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -39,6 +39,7 @@ table {
   src: url("fonts/posthuman.eot?#iefix") format("embedded-opentype"), url("fonts/posthuman.woff") format("woff"), url("fonts/posthuman.ttf") format("truetype"), url("fonts/posthuman.svg#posthuman") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
   font-family: 'posthuman';
@@ -1162,7 +1163,7 @@ body {
     -webkit-transition: color 0.5s, height 0.5s, -webkit-transform 0.5s;
     -moz-transition: color 0.5s, height 0.5s, -moz-transform 0.5s; }
   body small {
-    color: #cbcbcb;
+    color: #b1b1b1;
     margin-bottom: -1em; }
   body header#header {
     height: 50px;
@@ -1262,7 +1263,7 @@ body {
   height: auto;
   overflow: hidden;
   background-color: #f1f1f1;
-  padding: 4em 0 .5em 0;
+  padding: 10em 0 .5em 0;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1273,6 +1274,34 @@ body {
     @media only screen and (min-width: 768px) {
       .banner.fixed {
         max-height: 300px; } }
+  .banner:before {
+    content: '';
+    background: rgba(0, 0, 0, 0.1);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    /* Chrome 10+, Saf5.1+ */
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    /* FF3.6+ */
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    /* IE10 */
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    /* Opera 11.10+ */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    /* W3C */
+    position: absolute;
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    bottom: 0;
+    left: 0; }
+  .banner .pheye {
+    height: 130px;
+    margin: 0 auto;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .banner .pheye {
+        height: 270px; } }
   @media only screen and (min-width: 768px) {
     .banner {
       height: auto;
@@ -1281,8 +1310,9 @@ body {
     padding: 0 2%;
     display: table-cell;
     vertical-align: bottom;
-    color: black; }
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8); }
     .banner header h1 {
+      color: white;
       font-size: 2em;
       font-weight: 500;
       line-height: 1; }
@@ -1587,10 +1617,12 @@ ul.tags {
 
   100% {
     -webkit-transform: rotate(360deg); } }
+
 @-webkit-keyframes blink {
   0%, 98%, 100% {
     -webkit-transform: scaleX(1) scaleY(1); }
 
   99% {
     -webkit-transform: scaleX(1.1) scaleY(0.01); } }
+
 /* Form Elements */
