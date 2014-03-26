@@ -1083,7 +1083,7 @@ button, a.button, input[type=submit] {
   border-radius: 2px;
   color: white !important; }
   button:hover, a.button:hover, input[type=submit]:hover {
-    background: #242424; }
+    background: #8a8a8a; }
   button.tiny, a.button.tiny, input[type=submit].tiny {
     padding: 0.5em;
     font-size: 0.7em; }
@@ -1098,7 +1098,7 @@ button, a.button, input[type=submit] {
   button.primary, a.button.primary, input[type=submit].primary {
     background: #0a0a0a; }
     button.primary:hover, a.button.primary:hover, input[type=submit].primary:hover {
-      background: #242424; }
+      background: #8a8a8a; }
   button.secondary, a.button.secondary, input[type=submit].secondary {
     background: #00ed7a; }
     button.secondary:hover, a.button.secondary:hover, input[type=submit].secondary:hover {
@@ -1115,17 +1115,18 @@ button, a.button, input[type=submit] {
 a {
   color: #0a0a0a;
   text-decoration: none;
+  background-image: linear-gradient(to top, transparent 12%, black 12%, black 16%, transparent 16%);
   font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
-  font-weight: 500; }
+  font-weight: 400; }
   a:visited {
     color: #0a0a0a; }
   a:hover {
-    color: #242424; }
+    color: #8a8a8a; }
   a.primary {
     color: #0a0a0a; }
     a.primary:hover {
-      color: #242424; }
+      color: #8a8a8a; }
   a.secondary {
     color: #00ed7a; }
     a.secondary:hover {
@@ -1151,10 +1152,16 @@ nav ul, nav ul li ul, ul li nav ul, nav ol li ul, ol li nav ul {
       nav ul li {
         display: inline-block; } }
     nav ul li a {
-      font-weight: 300; }
+      font-weight: 300;
+      background-image: none; }
+
+html, body {
+  height: 100%; }
 
 body {
   color: #4d4d4d; }
+  body h1 a, body h2 a, body h3 a, body h4 a, body h5 a, body h6 a {
+    background-image: none; }
   body h1, body .h1 {
     text-transform: uppercase; }
   body a {
@@ -1162,8 +1169,14 @@ body {
     -webkit-transition: color 0.5s, height 0.5s, -webkit-transform 0.5s;
     -moz-transition: color 0.5s, height 0.5s, -moz-transform 0.5s; }
   body small {
-    color: #cbcbcb;
+    color: #b1b1b1;
     margin-bottom: -1em; }
+  body .page-wrap {
+    min-height: 100%;
+    margin-bottom: -50px; }
+    body .page-wrap:after {
+      content: "";
+      display: block; }
   body header#header {
     height: 50px;
     width: 100%;
@@ -1237,7 +1250,18 @@ body {
         body header#header nav ul li.logo a:hover {
           color: #dedede; }
   body .content article {
-    margin-bottom: 4em; }
+    margin-bottom: 3em; }
+    body .content article footer {
+      border-top: 1px solid #d6d6d6;
+      padding-top: 1.5em;
+      font-size: .8em; }
+      body .content article footer a {
+        text-transform: capitalize; }
+        body .content article footer a:after {
+          content: ", ";
+          background: white; }
+        body .content article footer a:last-child:after {
+          content: ""; }
   body .content.index .h1 {
     margin-bottom: .5em; }
   body .content.index article p {
@@ -1245,16 +1269,10 @@ body {
   body .content.index footer {
     border: 0;
     padding-top: 0; }
-  body footer {
-    border-top: 1px solid #d6d6d6;
-    padding-top: 1.5em;
-    font-size: .8em; }
-    body footer a {
-      text-transform: capitalize; }
-      body footer a:after {
-        content: ", "; }
-      body footer a:last-child:after {
-        content: ""; }
+  body footer.footer, body footer .page-wrap:after {
+    height: 50px;
+    background: #0a0a0a;
+    width: 100%; }
 
 .banner {
   margin: 0 0 1.5em 0;
@@ -1262,7 +1280,7 @@ body {
   height: auto;
   overflow: hidden;
   background-color: #f1f1f1;
-  padding: 4em 0 .5em 0;
+  padding: 10em 0 .5em 0;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1270,9 +1288,39 @@ body {
   .banner.fixed {
     max-height: 150px;
     padding: .5em 0; }
+    .banner.fixed:before {
+      background-image: none; }
     @media only screen and (min-width: 768px) {
       .banner.fixed {
         max-height: 300px; } }
+  .banner:before {
+    content: '';
+    background: rgba(0, 0, 0, 0.1);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    /* Chrome 10+, Saf5.1+ */
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    /* FF3.6+ */
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    /* IE10 */
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    /* Opera 11.10+ */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    /* W3C */
+    position: absolute;
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    bottom: 0;
+    left: 0; }
+  .banner .pheye {
+    height: 130px;
+    margin: 0 auto;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .banner .pheye {
+        height: 270px; } }
   @media only screen and (min-width: 768px) {
     .banner {
       height: auto;
@@ -1281,8 +1329,9 @@ body {
     padding: 0 2%;
     display: table-cell;
     vertical-align: bottom;
-    color: black; }
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8); }
     .banner header h1 {
+      color: white;
       font-size: 2em;
       font-weight: 500;
       line-height: 1; }
@@ -1296,21 +1345,21 @@ body {
     color: #777;
     padding: .5em; }
 
-nav.pagination ul {
-  vertical-align: middle;
-  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  margin-left: 0; }
-  nav.pagination ul li {
-    padding: .3em;
-    display: inline-block; }
-    nav.pagination ul li:hover a {
-      color: red; }
+nav.pagination {
+  margin-bottom: 3em; }
+  nav.pagination ul {
+    vertical-align: middle;
+    font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin-left: 0; }
+    nav.pagination ul li {
+      padding: .3em;
+      display: inline-block; }
 
 h1.tags {
   text-transform: capitalize; }
 
 ul.tags {
-  margin: 0;
+  margin: 0 10px;
   text-transform: capitalize; }
   ul.tags li {
     list-style-type: none; }
