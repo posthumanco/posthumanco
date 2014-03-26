@@ -12,6 +12,10 @@
 	background-image:      -o-linear-gradient(top, $primarycolor, $secondarycolor); /* Opera 11.10+ */
 	background-image:         linear-gradient(to bottom, $primarycolor, $secondarycolor); /* W3C */
 }
+$footer-height: 50px;
+html, body {
+	height: 100%;
+}
 body {
 	//margin-top: 50px; for fixed header
 	color: rgb(77, 77, 77);
@@ -35,6 +39,14 @@ body {
 	small {
 		color: darken($disabled, 25%);
 		margin-bottom: -1em;
+	}
+	.page-wrap {
+		min-height: 100%;
+		margin-bottom: -#{$footer-height};
+		&:after {
+			content: "";
+			display: block;
+		}
 	}
 	header {
 		&#header {
@@ -156,9 +168,10 @@ body {
 		}
 	}
 	footer {
-		&.footer {
-			height: 50px;
+		&.footer, .page-wrap:after {
+			height: $footer-height;
 			background: $primary;
+			width: 100%;
 		}
 	}
 }
@@ -177,6 +190,9 @@ body {
 	&.fixed {
 		max-height: 150px;
 		padding: .5em 0;
+		&:before {
+			background-image: none;	
+		}
 		@media #{$medium} {
 			max-height: 300px;	
 		}
