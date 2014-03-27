@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Gentium+Book+Basic:400,700,400italic,700italic);
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, nav.pagination ul li, .highlight, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, ul li dl, ol li dl, dt, dd, ol, ul li ol, ol li ol, ul, ul li ul, ol li ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, nav.pagination ul li, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, ul li dl, ol li dl, dt, dd, ol, ul li ol, ol li ol, ul, ul li ul, ol li ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -1051,7 +1051,7 @@ dl, ul li dl, ol li dl {
       content: "- "; }
 
 /* THIS AREA NEEDS VARIABLES */
-code, nav.pagination ul li, .highlight {
+code, nav.pagination ul li {
   max-width: 100%;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: .75em;
@@ -1059,7 +1059,7 @@ code, nav.pagination ul li, .highlight {
   padding: .2em;
   border-radius: 2px; }
   @media only screen and (min-width: 600px) {
-    code, nav.pagination ul li, .highlight {
+    code, nav.pagination ul li {
       padding: .1em; } }
 
 blockquote {
@@ -1372,6 +1372,11 @@ ul.tags {
   background-size: cover; }
 
 .highlight {
+  max-width: 100%;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: .75em;
+  color: #777;
+  border-radius: 2px;
   padding: .5em .5em .5em 2em;
   background-color: #49483e;
   margin: 0 0 1.5em 0;
@@ -1464,16 +1469,16 @@ ul.tags {
       @media only screen and (min-width: 600px) {
         .highlight.expand:before {
           display: none !important; } }
-    .highlight.expand pre code, .highlight.expand pre nav.pagination ul li, nav.pagination ul .highlight.expand pre li, .highlight.expand pre .highlight {
+    .highlight.expand code, .highlight.expand nav.pagination ul li, nav.pagination ul .highlight.expand li {
       white-space: pre; }
   .highlight pre {
     overflow-x: scroll;
     overflow-y: hidden; }
-    .highlight pre code, .highlight pre nav.pagination ul li, nav.pagination ul .highlight pre li, .highlight pre .highlight {
-      white-space: nowrap; }
-      @media only screen and (min-width: 600px) {
-        .highlight pre code, .highlight pre nav.pagination ul li, nav.pagination ul .highlight pre li, .highlight pre .highlight {
-          white-space: pre; } }
+  .highlight code, .highlight nav.pagination ul li, nav.pagination ul .highlight li {
+    white-space: nowrap; }
+    @media only screen and (min-width: 600px) {
+      .highlight code, .highlight nav.pagination ul li, nav.pagination ul .highlight li {
+        white-space: pre; } }
   .highlight .lineno {
     position: absolute;
     background-color: #49483e;
