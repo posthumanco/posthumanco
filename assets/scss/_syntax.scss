@@ -39,9 +39,9 @@
 	pre {
 		overflow-x: scroll;
 		overflow-y: hidden;
+		white-space: pre;
 	}
 	code {
-		white-space: pre;
 		white-space: nowrap;
 		@media #{$small} {
 			white-space: pre;
