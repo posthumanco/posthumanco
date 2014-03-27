@@ -46,12 +46,9 @@
 	}
 	code {
 		white-space: pre;
-		@media #{$screen} {
-			white-space: nowrap;
-		}
-		@media #{$small} {
-			white-space: pre;
-		}
+		// @media #{$screen} {
+		// 	white-space: nowrap;
+		// }
 	}
 	.lineno {
 		position: absolute;
