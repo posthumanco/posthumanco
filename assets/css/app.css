@@ -1465,7 +1465,7 @@ ul.tags {
         .highlight.expand:before {
           display: none !important; } }
     .highlight.expand code, .highlight.expand nav.pagination ul li, nav.pagination ul .highlight.expand li, .highlight.expand .highlight {
-      white-space: pre !important; }
+      white-space: pre-wrap !important; }
   .highlight pre {
     overflow-x: scroll;
     overflow-y: hidden;
