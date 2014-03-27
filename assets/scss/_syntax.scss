@@ -32,20 +32,20 @@
 				display: none !important;
 			}
 		}
-		code {
-			white-space: pre !important;
+		pre {
+			code {
+				white-space: pre;
+			}
 		}
 	}
 	pre {
 		overflow-x: scroll;
 		overflow-y: hidden;
-		white-space: pre;
-	}
-	code {
-		white-space: nowrap;
-		@media #{$small} {
-			white-space: pre;
-			-webkit-white-space: pre;
+		code {
+			white-space: nowrap;
+			@media #{$small} {
+				white-space: pre;
+			}
 		}
 	}
 	.lineno {

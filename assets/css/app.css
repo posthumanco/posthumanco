@@ -1464,18 +1464,16 @@ ul.tags {
       @media only screen and (min-width: 600px) {
         .highlight.expand:before {
           display: none !important; } }
-    .highlight.expand code, .highlight.expand nav.pagination ul li, nav.pagination ul .highlight.expand li, .highlight.expand .highlight {
-      white-space: pre !important; }
+    .highlight.expand pre code, .highlight.expand pre nav.pagination ul li, nav.pagination ul .highlight.expand pre li, .highlight.expand pre .highlight {
+      white-space: pre; }
   .highlight pre {
     overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: pre; }
-  .highlight code, .highlight nav.pagination ul li, nav.pagination ul .highlight li, .highlight .highlight {
-    white-space: nowrap; }
-    @media only screen and (min-width: 600px) {
-      .highlight code, .highlight nav.pagination ul li, nav.pagination ul .highlight li, .highlight .highlight {
-        white-space: pre;
-        -webkit-white-space: pre; } }
+    overflow-y: hidden; }
+    .highlight pre code, .highlight pre nav.pagination ul li, nav.pagination ul .highlight pre li, .highlight pre .highlight {
+      white-space: nowrap; }
+      @media only screen and (min-width: 600px) {
+        .highlight pre code, .highlight pre nav.pagination ul li, nav.pagination ul .highlight pre li, .highlight pre .highlight {
+          white-space: pre; } }
   .highlight .lineno {
     position: absolute;
     background-color: #49483e;
