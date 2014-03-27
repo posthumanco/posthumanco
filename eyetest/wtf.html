@@ -1,0 +1,43 @@
+<html class=""><head><meta charset="UTF-8">
+
+
+<style>.parent {
+  display: block;
+  background: red;
+}
+.parent code {
+  white-space: nowrap;
+}
+.parent.active code {
+  white-space: pre;
+}
+</style><style type="text/css"></style></head><body>
+<div class="parent">
+  <pre>    <code>
+      .parent {
+        code {
+          white-space: nowrap;
+        }
+        &amp;.active {
+          code {
+            white-space: pre;
+          }
+        }
+      }
+    </code>
+  </pre>
+</div>
+<script>var __links = document.querySelectorAll('a');function __linkClick(e) { parent.window.postMessage(this.href, '*');} ;for (var i = 0, l = __links.length; i < l; i++) {if ( __links[i].getAttribute('data-t') == '_blank' ) { __links[i].addEventListener('click', __linkClick, false);}}</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>$(document).ready(
+  $('.parent').click( function() {
+    if($(this).hasClass('active')) {
+      $(this).removeClass('active');
+    }
+    else {
+      $(this).addClass('active');
+    }
+  })
+ );//@ sourceURL=pen.js
+</script>
+</body></html>
