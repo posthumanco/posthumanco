@@ -42,6 +42,7 @@
 	}
 	code {
 		white-space: pre;
+		white-space: nowrap;
 		@media #{$small} {
 			white-space: pre;
 			-webkit-white-space: pre;
