@@ -45,7 +45,10 @@
 		overflow-y: hidden;
 	}
 	code {
-		white-space: nowrap;
+		white-space: pre;
+		@media #{$screen} {
+			white-space: nowrap;
+		}
 		@media #{$small} {
 			white-space: pre;
 		}
