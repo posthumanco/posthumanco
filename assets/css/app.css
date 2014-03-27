@@ -1470,7 +1470,8 @@ ul.tags {
     overflow-x: scroll;
     overflow-y: hidden; }
   .highlight code, .highlight nav.pagination ul li, nav.pagination ul .highlight li, .highlight .highlight {
-    white-space: pre; }
+    white-space: pre;
+    white-space: nowrap; }
     @media only screen and (min-width: 600px) {
       .highlight code, .highlight nav.pagination ul li, nav.pagination ul .highlight li, .highlight .highlight {
         white-space: pre;
