@@ -4,7 +4,7 @@ title:  "Weekly SASS Mixin and a bunch of other unimoprtant shit"
 date:   2013-11-19 11:00:00
 author: Dustin Armstrong
 tags: [crystal meth, heroin]
-<!-- banner: /assets/images/glitch/pia17843bowshock_0_0GLITCH.jpg -->
+banner: /assets/images/glitch/pia17843bowshock_0_0GLITCH.jpg
 <!-- banner: http://i.imgur.com/YY8Vs7W.png -->
 ---
 

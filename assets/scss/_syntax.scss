@@ -7,45 +7,45 @@
 	padding: .5em .5em .5em 2em;
 	background-color: #49483e;
 	margin: $p-margin;
-	&:before {
-		content: 'Expand Code';
-		display: inline-block;
-		position: absolute;
-		right: 1%;
-		background: #dedede;
-		margin: -7px 0 0 0;
-		padding: .54em;
-		@media #{$small} {
-			display: none;
-		}
-	}
+	// &:before {
+	// 	content: 'Expand Code';
+	// 	display: inline-block;
+	// 	position: absolute;
+	// 	right: 1%;
+	// 	background: #dedede;
+	// 	margin: -7px 0 0 0;
+	// 	padding: .54em;
+	// 	@media #{$small} {
+	// 		display: none;
+	// 	}
+	// }
 	&.expand {
 		padding: 2.4em .5em .5em 2em;
 		@media #{$small} {
 			padding: .5em .5em .5em 2em;
 		}
-		&:before {
-			display: block;
-			content: 'Collapse Code';
-			left: 0;
-			right: 0;
-			position: absolute;
-			margin: -32px .3em;
-			background: rgba(222, 222, 222, 1);
-			@media #{$small} {
-				display: none !important;
-			}
-		}
-		code {
-			white-space: pre;
-		}
+		// &:before {
+		// 	display: block;
+		// 	content: 'Collapse Code';
+		// 	left: 0;
+		// 	right: 0;
+		// 	position: absolute;
+		// 	margin: -32px .3em;
+		// 	background: rgba(222, 222, 222, 1);
+		// 	@media #{$small} {
+		// 		display: none !important;
+		// 	}
+		// }
+		// code {
+		// 	white-space: pre;
+		// }
 	}
 	pre {
 		overflow-x: scroll;
 		overflow-y: hidden;
 	}
 	code {
-		white-space: pre;
+		// white-space: pre;
 		// @media #{$screen} {
 		// 	white-space: nowrap;
 		// }
