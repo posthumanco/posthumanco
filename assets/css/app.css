@@ -314,7 +314,7 @@ you can use the generic selector below, but it's slower:
 .row {
   width: auto;
   margin: 0 auto;
-  max-width: 1224px; }
+  max-width: 100%; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -929,7 +929,7 @@ h1, .h1 {
   h1 a, .h1 a {
     font-weight: 400; }
   h1 small, .h1 small {
-    font-size: 0.5em;
+    font-size: 0.4em;
     display: block; }
 
 h2, .h2 {
@@ -942,7 +942,7 @@ h2, .h2 {
   h2 a, .h2 a {
     font-weight: 400; }
   h2 small, .h2 small {
-    font-size: -0.8em;
+    font-size: -1.0em;
     display: block; }
 
 h3, .h3 {
@@ -955,7 +955,7 @@ h3, .h3 {
   h3 a, .h3 a {
     font-weight: 400; }
   h3 small, .h3 small {
-    font-size: -2.1em;
+    font-size: -2.4em;
     display: block; }
 
 h4, .h4 {
@@ -968,7 +968,7 @@ h4, .h4 {
   h4 a, .h4 a {
     font-weight: 400; }
   h4 small, .h4 small {
-    font-size: -3.4em;
+    font-size: -3.8em;
     display: block; }
 
 h5, .h5 {
@@ -981,7 +981,7 @@ h5, .h5 {
   h5 a, .h5 a {
     font-weight: 400; }
   h5 small, .h5 small {
-    font-size: -4.7em;
+    font-size: -5.2em;
     display: block; }
 
 h6, .h6 {
@@ -994,7 +994,7 @@ h6, .h6 {
   h6 a, .h6 a {
     font-weight: 400; }
   h6 small, .h6 small {
-    font-size: -6.0em;
+    font-size: -6.6em;
     display: block; }
 
 i {
@@ -1173,6 +1173,10 @@ body {
   body small {
     color: #b1b1b1;
     margin-bottom: -1em; }
+    body small .author {
+      clear: both; }
+      body small .author a {
+        color: #b1b1b1; }
   body .page-wrap {
     min-height: 100%;
     margin-bottom: -50px; }
@@ -1240,7 +1244,7 @@ body {
             padding: 18px .5em;
             font-size: 15px; } }
         body header#header nav ul li a:hover {
-          color: #dedede; }
+          color: #9a9a9a; }
       body header#header nav ul li.logo .ph-posthuman_text {
         stroke: 1; }
       @media only screen and (min-width: 768px) {
@@ -1251,7 +1255,7 @@ body {
         color: white;
         font-size: 20px; }
         body header#header nav ul li.logo a:hover {
-          color: #dedede; }
+          color: #9a9a9a; }
   body .content article {
     margin-bottom: 3em; }
     body .content article footer {
@@ -1277,8 +1281,28 @@ body {
     background: #1a1a1a;
     width: 100%;
     font-weight: 200;
+    font-size: .8em;
     color: white;
-    margin-top: 1em; }
+    margin-top: 1em;
+    line-height: 3.5; }
+    @media only screen {
+      body footer.footer, body footer .page-wrap:after {
+        line-height: 3.2; } }
+    @media only screen and (min-width: 768px) {
+      body footer.footer, body footer .page-wrap:after {
+        line-height: 3; } }
+    @media only screen and (min-width: 1024px) {
+      body footer.footer, body footer .page-wrap:after {
+        font-size: 2.4; } }
+    @media only screen and (min-width: 1300px) {
+      body footer.footer, body footer .page-wrap:after {
+        line-height: 2.6; } }
+    body footer.footer a, body footer .page-wrap:after a {
+      color: white;
+      background: none;
+      font-weight: 200; }
+      body footer.footer a:hover, body footer .page-wrap:after a:hover {
+        color: #9a9a9a; }
 
 .banner {
   margin: 50px 0 1.5em 0;
@@ -1352,14 +1376,16 @@ body {
     padding: .5em; }
 
 nav.pagination {
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
   nav.pagination ul {
     vertical-align: middle;
-    font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin-left: 0; }
     nav.pagination ul li {
       padding: .3em;
       display: inline-block; }
+      nav.pagination ul li .active {
+        font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 h1.tags {
   text-transform: capitalize; }
