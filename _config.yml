@@ -1,5 +1,5 @@
 name: Posthuman
-baseurl: posthuman.co
+baseurl: http://posthuman.co
 markdown: redcarpet
 pygments: true
 permalink: blog/:title
