@@ -1,5 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Gentium+Book+Basic:400,700,400italic,700italic);
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, nav.pagination ul li, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, ul li dl, ol li dl, dt, dd, ol, ul li ol, ol li ol, ul, ul li ul, ol li ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -39,6 +39,7 @@ table {
   src: url("fonts/posthuman.eot?#iefix") format("embedded-opentype"), url("fonts/posthuman.woff") format("woff"), url("fonts/posthuman.ttf") format("truetype"), url("fonts/posthuman.svg#posthuman") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
   font-family: 'posthuman';
@@ -313,7 +314,7 @@ you can use the generic selector below, but it's slower:
 .row {
   width: auto;
   margin: 0 auto;
-  max-width: 1224px; }
+  max-width: 100%; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -919,7 +920,7 @@ body {
       font-size: 24px; } }
 
 h1, .h1 {
-  color: #0a0a0a;
+  color: #1a1a1a;
   font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.6em;
   font-weight: 400;
@@ -928,11 +929,11 @@ h1, .h1 {
   h1 a, .h1 a {
     font-weight: 400; }
   h1 small, .h1 small {
-    font-size: 0.5em;
+    font-size: 0.4em;
     display: block; }
 
 h2, .h2 {
-  color: #0a0a0a;
+  color: #1a1a1a;
   font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
@@ -941,11 +942,11 @@ h2, .h2 {
   h2 a, .h2 a {
     font-weight: 400; }
   h2 small, .h2 small {
-    font-size: -0.8em;
+    font-size: -1.0em;
     display: block; }
 
 h3, .h3 {
-  color: #0a0a0a;
+  color: #1a1a1a;
   font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
@@ -954,11 +955,11 @@ h3, .h3 {
   h3 a, .h3 a {
     font-weight: 400; }
   h3 small, .h3 small {
-    font-size: -2.1em;
+    font-size: -2.4em;
     display: block; }
 
 h4, .h4 {
-  color: #0a0a0a;
+  color: #1a1a1a;
   font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   font-weight: 400;
@@ -967,11 +968,11 @@ h4, .h4 {
   h4 a, .h4 a {
     font-weight: 400; }
   h4 small, .h4 small {
-    font-size: -3.4em;
+    font-size: -3.8em;
     display: block; }
 
 h5, .h5 {
-  color: #0a0a0a;
+  color: #1a1a1a;
   font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 0.8em;
   font-weight: 400;
@@ -980,11 +981,11 @@ h5, .h5 {
   h5 a, .h5 a {
     font-weight: 400; }
   h5 small, .h5 small {
-    font-size: -4.7em;
+    font-size: -5.2em;
     display: block; }
 
 h6, .h6 {
-  color: #0a0a0a;
+  color: #1a1a1a;
   font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 0.6em;
   font-weight: 400;
@@ -993,7 +994,7 @@ h6, .h6 {
   h6 a, .h6 a {
     font-weight: 400; }
   h6 small, .h6 small {
-    font-size: -6.0em;
+    font-size: -6.6em;
     display: block; }
 
 i {
@@ -1075,7 +1076,7 @@ cite {
     content: "\2014 \0020"; }
 
 button, a.button, input[type=submit] {
-  background: #0a0a0a;
+  background: #1a1a1a;
   border: none;
   padding: 0.5em;
   font-size: 1em;
@@ -1083,7 +1084,7 @@ button, a.button, input[type=submit] {
   border-radius: 2px;
   color: white !important; }
   button:hover, a.button:hover, input[type=submit]:hover {
-    background: #8a8a8a; }
+    background: #9a9a9a; }
   button.tiny, a.button.tiny, input[type=submit].tiny {
     padding: 0.5em;
     font-size: 0.7em; }
@@ -1096,9 +1097,9 @@ button, a.button, input[type=submit] {
   button.expand, a.button.expand, input[type=submit].expand {
     width: 100%; }
   button.primary, a.button.primary, input[type=submit].primary {
-    background: #0a0a0a; }
+    background: #1a1a1a; }
     button.primary:hover, a.button.primary:hover, input[type=submit].primary:hover {
-      background: #8a8a8a; }
+      background: #9a9a9a; }
   button.secondary, a.button.secondary, input[type=submit].secondary {
     background: #00ed7a; }
     button.secondary:hover, a.button.secondary:hover, input[type=submit].secondary:hover {
@@ -1113,20 +1114,20 @@ button, a.button, input[type=submit] {
       background: #f60e00; }
 
 a {
-  color: #0a0a0a;
+  color: #1a1a1a;
   text-decoration: none;
-  background-image: linear-gradient(to top, transparent 12%, black 12%, black 16%, transparent 16%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 12%, black 12%, black 16%, rgba(0, 0, 0, 0) 16%);
   font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   font-weight: 400; }
   a:visited {
-    color: #0a0a0a; }
+    color: #1a1a1a; }
   a:hover {
-    color: #8a8a8a; }
+    color: #9a9a9a; }
   a.primary {
-    color: #0a0a0a; }
+    color: #1a1a1a; }
     a.primary:hover {
-      color: #8a8a8a; }
+      color: #9a9a9a; }
   a.secondary {
     color: #00ed7a; }
     a.secondary:hover {
@@ -1159,7 +1160,8 @@ html, body {
   height: 100%; }
 
 body {
-  color: #4d4d4d; }
+  color: #4d4d4d;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
   body h1 a, body h2 a, body h3 a, body h4 a, body h5 a, body h6 a {
     background-image: none; }
   body h1, body .h1 {
@@ -1171,6 +1173,10 @@ body {
   body small {
     color: #b1b1b1;
     margin-bottom: -1em; }
+    body small .author {
+      clear: both; }
+      body small .author a {
+        color: #b1b1b1; }
   body .page-wrap {
     min-height: 100%;
     margin-bottom: -50px; }
@@ -1178,6 +1184,7 @@ body {
       content: "";
       display: block; }
   body header#header {
+    position: fixed;
     height: 50px;
     width: 100%;
     background: #1a1a1a;
@@ -1237,7 +1244,7 @@ body {
             padding: 18px .5em;
             font-size: 15px; } }
         body header#header nav ul li a:hover {
-          color: #dedede; }
+          color: #9a9a9a; }
       body header#header nav ul li.logo .ph-posthuman_text {
         stroke: 1; }
       @media only screen and (min-width: 768px) {
@@ -1248,7 +1255,7 @@ body {
         color: white;
         font-size: 20px; }
         body header#header nav ul li.logo a:hover {
-          color: #dedede; }
+          color: #9a9a9a; }
   body .content article {
     margin-bottom: 3em; }
     body .content article footer {
@@ -1271,11 +1278,34 @@ body {
     padding-top: 0; }
   body footer.footer, body footer .page-wrap:after {
     height: 50px;
-    background: #0a0a0a;
-    width: 100%; }
+    background: #1a1a1a;
+    width: 100%;
+    font-weight: 200;
+    font-size: .8em;
+    color: white;
+    margin-top: 1em;
+    line-height: 3.5; }
+    @media only screen {
+      body footer.footer, body footer .page-wrap:after {
+        line-height: 3.2; } }
+    @media only screen and (min-width: 768px) {
+      body footer.footer, body footer .page-wrap:after {
+        line-height: 3; } }
+    @media only screen and (min-width: 1024px) {
+      body footer.footer, body footer .page-wrap:after {
+        font-size: 2.4; } }
+    @media only screen and (min-width: 1300px) {
+      body footer.footer, body footer .page-wrap:after {
+        line-height: 2.6; } }
+    body footer.footer a, body footer .page-wrap:after a {
+      color: white;
+      background: none;
+      font-weight: 200; }
+      body footer.footer a:hover, body footer .page-wrap:after a:hover {
+        color: #9a9a9a; }
 
 .banner {
-  margin: 0 0 1.5em 0;
+  margin: 50px 0 1.5em 0;
   min-height: 150px;
   height: auto;
   overflow: hidden;
@@ -1346,14 +1376,16 @@ body {
     padding: .5em; }
 
 nav.pagination {
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
   nav.pagination ul {
     vertical-align: middle;
-    font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin-left: 0; }
     nav.pagination ul li {
       padding: .3em;
       display: inline-block; }
+      nav.pagination ul li .active {
+        font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 h1.tags {
   text-transform: capitalize; }
@@ -1442,40 +1474,14 @@ ul.tags {
   /* Generic.Subheading & Diff Unified/Comment? */
   /* Generic.Deleted & Diff Deleted */
   /* Generic.Inserted & Diff Inserted */ }
-  .highlight:before {
-    content: 'Expand Code';
-    display: inline-block;
-    position: absolute;
-    right: 1%;
-    background: #dedede;
-    margin: -7px 0 0 0;
-    padding: .54em; }
-    @media only screen and (min-width: 600px) {
-      .highlight:before {
-        display: none; } }
   .highlight.expand {
     padding: 2.4em .5em .5em 2em; }
     @media only screen and (min-width: 600px) {
       .highlight.expand {
         padding: .5em .5em .5em 2em; } }
-    .highlight.expand:before {
-      display: block;
-      content: 'Collapse Code';
-      left: 0;
-      right: 0;
-      position: absolute;
-      margin: -32px .3em;
-      background: #dedede; }
-      @media only screen and (min-width: 600px) {
-        .highlight.expand:before {
-          display: none !important; } }
-    .highlight.expand code, .highlight.expand nav.pagination ul li, nav.pagination ul .highlight.expand li {
-      white-space: pre; }
   .highlight pre {
     overflow-x: scroll;
     overflow-y: hidden; }
-  .highlight code, .highlight nav.pagination ul li, nav.pagination ul .highlight li {
-    white-space: pre; }
   .highlight .lineno {
     position: absolute;
     background-color: #49483e;
@@ -1636,10 +1642,12 @@ ul.tags {
 
   100% {
     -webkit-transform: rotate(360deg); } }
+
 @-webkit-keyframes blink {
   0%, 98%, 100% {
     -webkit-transform: scaleX(1) scaleY(1); }
 
   99% {
     -webkit-transform: scaleX(1.1) scaleY(0.01); } }
+
 /* Form Elements */
