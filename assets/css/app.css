@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Gentium+Book+Basic:400,700,400italic,700italic);
 /* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Gentium+Book+Basic:400,700,400italic,700italic);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, nav.pagination ul li, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, ul li dl, ol li dl, dt, dd, ol, ul li ol, ol li ol, ul, ul li ul, ol li ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -39,7 +39,6 @@ table {
   src: url("fonts/posthuman.eot?#iefix") format("embedded-opentype"), url("fonts/posthuman.woff") format("woff"), url("fonts/posthuman.ttf") format("truetype"), url("fonts/posthuman.svg#posthuman") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
   font-family: 'posthuman';
@@ -1116,7 +1115,7 @@ button, a.button, input[type=submit] {
 a {
   color: #1a1a1a;
   text-decoration: none;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 12%, black 12%, black 16%, rgba(0, 0, 0, 0) 16%);
+  background-image: linear-gradient(to top, transparent 12%, black 12%, black 16%, transparent 16%);
   font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   font-weight: 400; }
@@ -1269,11 +1268,44 @@ body {
           background: white; }
         body .content article footer a:last-child:after {
           content: ""; }
-  body .content.index .h1 {
+  body .content.index .banner {
+    margin-bottom: 0;
+    max-height: 150px;
+    padding: .5em 0; }
+    body .content.index .banner:before {
+      background-image: none; }
+    @media only screen and (min-width: 768px) {
+      body .content.index .banner {
+        max-height: 350px; } }
+  body .content.index .mission {
+    background: #1a1a1a;
+    padding: 5em 0; }
+    body .content.index .mission .title {
+      color: white;
+      margin: 0 0 .2em 0;
+      font-size: 3em; }
+      @media only screen and (min-width: 1024px) {
+        body .content.index .mission .title {
+          font-size: 3.3em; } }
+    body .content.index .mission .subtitle {
+      text-align: justify;
+      font-style: italic;
+      line-height: 2;
+      color: white;
+      text-transform: none; }
+  body .content.blog .banner {
+    max-height: 150px;
+    padding: .5em 0; }
+    body .content.blog .banner:before {
+      background-image: none; }
+    @media only screen and (min-width: 768px) {
+      body .content.blog .banner {
+        max-height: 300px; } }
+  body .content.blog .h1 {
     margin-bottom: .5em; }
-  body .content.index article p {
+  body .content.blog article p {
     margin-bottom: 1em; }
-  body .content.index footer {
+  body .content.blog footer {
     border: 0;
     padding-top: 0; }
   body footer.footer, body footer .page-wrap:after {
@@ -1283,7 +1315,6 @@ body {
     font-weight: 200;
     font-size: .8em;
     color: white;
-    margin-top: 1em;
     line-height: 3.5; }
     @media only screen {
       body footer.footer, body footer .page-wrap:after {
@@ -1315,14 +1346,6 @@ body {
   background-position: center center;
   background-size: cover;
   position: relative; }
-  .banner.fixed {
-    max-height: 150px;
-    padding: .5em 0; }
-    .banner.fixed:before {
-      background-image: none; }
-    @media only screen and (min-width: 768px) {
-      .banner.fixed {
-        max-height: 300px; } }
   .banner:before {
     content: '';
     background: rgba(0, 0, 0, 0.1);
@@ -1617,6 +1640,8 @@ ul.tags {
 
 .ph-eye {
   max-height: 90%; }
+  .ph-eye .ph-circle {
+    fill: #1a1a1a; }
   .ph-eye .ph-eyelid {
     animation: blink 10s ease infinite;
     -webkit-animation: blink 10s ease infinite;
@@ -1642,12 +1667,10 @@ ul.tags {
 
   100% {
     -webkit-transform: rotate(360deg); } }
-
 @-webkit-keyframes blink {
   0%, 98%, 100% {
     -webkit-transform: scaleX(1) scaleY(1); }
 
   99% {
     -webkit-transform: scaleX(1.1) scaleY(0.01); } }
-
 /* Form Elements */
