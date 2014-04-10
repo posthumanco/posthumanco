@@ -4,8 +4,8 @@ title: Posthuman - Blog
 banner: /assets/images/IMG_6588.jpg
 ---
 
-<div class="content index">
-	<div class="row collapse banner fixed" style="background-image:url({{ site.baseurl }}{{ page.banner }});">
+<div class="content blog">
+	<div class="row collapse banner" style="background-image:url({{ site.baseurl }}{{ page.banner }});">
 		<div class="screen-12 columns">
 			<object data="{{ site.baseurl }}/assets/svg/pheye-live.svg" type="image/svg+xml" class="pheye">
 			</object>
@@ -13,7 +13,7 @@ banner: /assets/images/IMG_6588.jpg
 	</div>
 	{% for post in paginator.posts %}
 		<article>
-			<div class="screen-11 screen-centered small-8 small-centered medium-7 medium-centered large-6 large-centered extra-large-5 extra-large-centered columns">
+			{% include content-columns.html %}
 		  		<header>
 		  			<h2 class="h1"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 		  				<small>

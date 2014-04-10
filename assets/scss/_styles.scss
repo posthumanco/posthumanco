@@ -162,6 +162,48 @@ body {
 			}
 		}
 		&.index {
+			.banner {
+				margin-bottom: 0;
+				max-height: 150px;
+				padding: .5em 0;
+				&:before {
+					background-image: none;	
+				}
+				@media #{$medium} {
+					max-height: 350px;	
+				}
+			}
+			.mission {
+				background: $primary;
+				padding: 5em 0;
+				.title {
+					color: white;
+					margin: 0 0 .2em 0;
+					font-size: 3em;
+					@media #{$large} {
+						font-size: 3.3em;
+					}
+				}
+				.subtitle {
+					text-align: justify;
+					font-style: italic;
+					line-height: 2;
+					color: white;
+					text-transform: none;
+				}
+			}
+		}
+		&.blog {
+			.banner {
+				max-height: 150px;
+				padding: .5em 0;
+				&:before {
+					background-image: none;	
+				}
+				@media #{$medium} {
+					max-height: 300px;	
+				}
+			}
 			.h1 {
 				margin-bottom: .5em;
 			}
@@ -184,7 +226,7 @@ body {
 			font-weight: 200;
 			font-size: .8em;
 			color: white;
-			margin-top: 1em;
+			// margin-top: 1em;
 			line-height: 3.5;
 			@media #{$screen} {
 				line-height: 3.2;
@@ -221,16 +263,6 @@ body {
 	background-position: center center;
 	background-size: cover;
 	position: relative;
-	&.fixed {
-		max-height: 150px;
-		padding: .5em 0;
-		&:before {
-			background-image: none;	
-		}
-		@media #{$medium} {
-			max-height: 300px;	
-		}
-	}
 	&:before {
 		content: '';
 		@include background-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));

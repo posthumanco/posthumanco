@@ -1,13 +1,24 @@
 ---
 layout: default
 title: Posthuman
-banner:
+banner: 
 ---
 
 <div class="content index">
-	<div class="row collapse banner fixed">
-		<div class="small-12 columns">
+	<div class="row collapse banner fixed" style="background-image:url({{ site.baseurl }}{{ page.banner }});">
+		<div class="screen-12 columns">
 			{% include eye.html %}
+		</div>
+	</div>
+	<div class="row mission text-center">
+		{% include content-columns.html %}
+			<h2 class="h1 title">Be More <br>Than You Are</h2>
+			<h1 class="h4 subtitle">Posthuman is a group of freelance web designers &amp; developers devoted to their craft. We want to help create client products that evolve their business, and share our cumulative knowledge with the community of our peers.</h1>
+		</div>
+	</div>
+	<div class="row text-center">
+		{% include content-columns.html %}
+			
 		</div>
 	</div>
 </div>
