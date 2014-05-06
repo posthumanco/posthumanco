@@ -1,0 +1,14 @@
+/* TEAM */
+                            
+Owner/Designer/Developer: Dustin Armstrong
+Contact: dustin [at] dustinarmstrong.com                   
+Twitter: @dustinarmstrong                           
+Location: Dayton, Ohio USA				
+						
+                            
+/* SITE */
+                            
+Last update: 2014/05/6                                                   
+Standards: HTML5, CSS3, SCSS
+Components: Eric Meyer's CSS Reset, Jekyll, jQuery
+Software: Sublime Text, Git, iTerm2, Illustrator

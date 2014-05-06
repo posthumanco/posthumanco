@@ -51,7 +51,10 @@ body {
 	.page-wrap {
 		min-height: 100%;
 		margin-bottom: -#{$footer-height};
-		padding-bottom: 2em;
+		padding-bottom: 3em;
+		@media #{$medium} {
+			padding-bottom: 3em;
+		}
 		&:after {
 			content: "";
 			display: block;
@@ -175,6 +178,7 @@ body {
 								padding: 14px 0;
 								color: white;
 								font-size: 20px;
+								max-height: 50px;
 								&:hover {
 									// color: rgb(222, 222, 222);
 									color: $primary-hover;
