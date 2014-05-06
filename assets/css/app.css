@@ -1159,6 +1159,7 @@ html, body {
   height: 100%; }
 
 body {
+  background: white;
   color: #4d4d4d;
   font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
   body h1 a, body h2 a, body h3 a, body h4 a, body h5 a, body h6 a {
