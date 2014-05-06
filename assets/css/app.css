@@ -1182,6 +1182,32 @@ body {
     body .page-wrap:after {
       content: "";
       display: block; }
+    body .page-wrap.index {
+      min-height: 100%; }
+      body .page-wrap.index .banner {
+        margin-bottom: 0;
+        max-height: 150px;
+        padding: .5em 0; }
+        body .page-wrap.index .banner:before {
+          background-image: none; }
+        @media only screen and (min-width: 768px) {
+          body .page-wrap.index .banner {
+            max-height: 350px; } }
+      body .page-wrap.index .mission {
+        padding: 5em 0; }
+        body .page-wrap.index .mission .title {
+          color: white;
+          margin: 0 0 .2em 0;
+          font-size: 3em; }
+          @media only screen and (min-width: 1024px) {
+            body .page-wrap.index .mission .title {
+              font-size: 3.3em; } }
+        body .page-wrap.index .mission .subtitle {
+          text-align: justify;
+          font-style: italic;
+          line-height: 2;
+          color: white;
+          text-transform: none; }
   body header#header {
     position: fixed;
     height: 50px;
@@ -1268,31 +1294,6 @@ body {
           background: white; }
         body .content article footer a:last-child:after {
           content: ""; }
-  body .content.index .banner {
-    margin-bottom: 0;
-    max-height: 150px;
-    padding: .5em 0; }
-    body .content.index .banner:before {
-      background-image: none; }
-    @media only screen and (min-width: 768px) {
-      body .content.index .banner {
-        max-height: 350px; } }
-  body .content.index .mission {
-    background: #1a1a1a;
-    padding: 5em 0; }
-    body .content.index .mission .title {
-      color: white;
-      margin: 0 0 .2em 0;
-      font-size: 3em; }
-      @media only screen and (min-width: 1024px) {
-        body .content.index .mission .title {
-          font-size: 3.3em; } }
-    body .content.index .mission .subtitle {
-      text-align: justify;
-      font-style: italic;
-      line-height: 2;
-      color: white;
-      text-transform: none; }
   body .content.blog .banner {
     max-height: 150px;
     padding: .5em 0; }
