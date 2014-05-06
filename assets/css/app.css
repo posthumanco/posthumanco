@@ -1178,36 +1178,41 @@ body {
         color: #b1b1b1; }
   body .page-wrap {
     min-height: 100%;
-    margin-bottom: -50px; }
+    margin-bottom: -50px;
+    padding-bottom: 2em; }
     body .page-wrap:after {
       content: "";
       display: block; }
     body .page-wrap.index {
+      background: #1a1a1a;
       min-height: 100%; }
       body .page-wrap.index .banner {
+        background: none;
         margin-bottom: 0;
-        max-height: 150px;
+        max-height: 300px;
         padding: .5em 0; }
         body .page-wrap.index .banner:before {
-          background-image: none; }
+          background-image: none;
+          background: none; }
         @media only screen and (min-width: 768px) {
           body .page-wrap.index .banner {
             max-height: 350px; } }
-      body .page-wrap.index .mission {
-        padding: 5em 0; }
-        body .page-wrap.index .mission .title {
-          color: white;
-          margin: 0 0 .2em 0;
-          font-size: 3em; }
-          @media only screen and (min-width: 1024px) {
-            body .page-wrap.index .mission .title {
-              font-size: 3.3em; } }
-        body .page-wrap.index .mission .subtitle {
-          text-align: justify;
-          font-style: italic;
-          line-height: 2;
-          color: white;
-          text-transform: none; }
+      body .page-wrap.index .mission .title {
+        color: white;
+        margin: 0 0 .2em 0;
+        font-size: 2em; }
+        @media only screen and (min-width: 768px) {
+          body .page-wrap.index .mission .title {
+            font-size: 2.8; } }
+        @media only screen and (min-width: 1024px) {
+          body .page-wrap.index .mission .title {
+            font-size: 3.3em; } }
+      body .page-wrap.index .mission .subtitle {
+        text-align: justify;
+        font-style: italic;
+        line-height: 2;
+        color: white;
+        text-transform: none; }
   body header#header {
     position: fixed;
     height: 50px;
@@ -1236,8 +1241,8 @@ body {
     body header#header .ph-arrow-down {
       color: white;
       position: absolute;
-      top: 16px;
-      right: 26px;
+      padding: 16px;
+      right: 1%;
       z-index: 9999;
       transition: color 0.5s, height 0.5s, transform 0.5s;
       -webkit-transition: color 0.5s, height 0.5s, -webkit-transform 0.5s;
@@ -1272,6 +1277,10 @@ body {
           color: #9a9a9a; }
       body header#header nav ul li.logo .ph-posthuman_text {
         stroke: 1; }
+        body header#header nav ul li.logo .ph-posthuman_text h1 {
+          position: absolute;
+          top: -9999px;
+          left: -9999px; }
       @media only screen and (min-width: 768px) {
         body header#header nav ul li.logo {
           display: inline-block; } }
@@ -1281,32 +1290,32 @@ body {
         font-size: 20px; }
         body header#header nav ul li.logo a:hover {
           color: #9a9a9a; }
-  body .content article {
+  body .content article footer {
+    border-top: 1px solid #d6d6d6;
+    padding-top: 1.5em;
+    font-size: .8em; }
+    body .content article footer a {
+      text-transform: capitalize; }
+      body .content article footer a:after {
+        content: ", ";
+        background: white; }
+      body .content article footer a:last-child:after {
+        content: ""; }
+  body .content.blog article {
     margin-bottom: 3em; }
-    body .content article footer {
-      border-top: 1px solid #d6d6d6;
-      padding-top: 1.5em;
-      font-size: .8em; }
-      body .content article footer a {
-        text-transform: capitalize; }
-        body .content article footer a:after {
-          content: ", ";
-          background: white; }
-        body .content article footer a:last-child:after {
-          content: ""; }
-  body .content.blog .banner {
+  body .content.page .banner, body .content.blog .banner {
     max-height: 150px;
     padding: .5em 0; }
-    body .content.blog .banner:before {
+    body .content.page .banner:before, body .content.blog .banner:before {
       background-image: none; }
     @media only screen and (min-width: 768px) {
-      body .content.blog .banner {
+      body .content.page .banner, body .content.blog .banner {
         max-height: 300px; } }
-  body .content.blog .h1 {
+  body .content.page .h1, body .content.blog .h1 {
     margin-bottom: .5em; }
-  body .content.blog article p {
+  body .content.page article p, body .content.blog article p {
     margin-bottom: 1em; }
-  body .content.blog footer {
+  body .content.page footer, body .content.blog footer {
     border: 0;
     padding-top: 0; }
   body footer.footer, body footer .page-wrap:after {
@@ -1322,7 +1331,7 @@ body {
         line-height: 3.2; } }
     @media only screen and (min-width: 768px) {
       body footer.footer, body footer .page-wrap:after {
-        line-height: 3; } }
+        line-height: 2.8; } }
     @media only screen and (min-width: 1024px) {
       body footer.footer, body footer .page-wrap:after {
         font-size: 2.4; } }

@@ -50,29 +50,35 @@ body {
 	.page-wrap {
 		min-height: 100%;
 		margin-bottom: -#{$footer-height};
+		padding-bottom: 2em;
 		&:after {
 			content: "";
 			display: block;
 		}
 		&.index {
+			background: $primary;
 			min-height: 100%;
 			.banner {
+				background: none;
 				margin-bottom: 0;
-				max-height: 150px;
+				max-height: 300px;
 				padding: .5em 0;
 				&:before {
-					background-image: none;	
+					background-image: none;
+					background: none;
 				}
 				@media #{$medium} {
 					max-height: 350px;	
 				}
 			}
 			.mission {
-				padding: 5em 0;
 				.title {
 					color: white;
 					margin: 0 0 .2em 0;
-					font-size: 3em;
+					font-size: 2em;
+					@media #{$medium} {
+						font-size: 2.8;
+					}
 					@media #{$large} {
 						font-size: 3.3em;
 					}
@@ -113,8 +119,8 @@ body {
 			.ph-arrow-down {
 				color: white;
 				position: absolute;
-				top: 16px;
-				right: 26px;
+				padding: 16px;
+				right: 1%;
 				z-index: 9999;
 				@include transition;
 				@media #{$medium}, #{$large} {
@@ -155,6 +161,11 @@ body {
 						&.logo {
 							.ph-posthuman_text {
 								stroke: 1;
+								h1 {
+									position: absolute;
+								    top: -9999px;
+								    left: -9999px;
+								}
 							}
 							@media #{$medium} {
 								display: inline-block;
@@ -176,7 +187,6 @@ body {
 	}
 	.content {
 		article {
-			margin-bottom: 3em;
 			footer {
 				border-top: 1px solid #d6d6d6;
 				padding-top: 1.5em;
@@ -193,39 +203,12 @@ body {
 				}
 			}
 		}
-		// &.index {
-		// 	min-height: 100%;
-		// 	.banner {
-		// 		margin-bottom: 0;
-		// 		max-height: 150px;
-		// 		padding: .5em 0;
-		// 		&:before {
-		// 			background-image: none;	
-		// 		}
-		// 		@media #{$medium} {
-		// 			max-height: 350px;	
-		// 		}
-		// 	}
-		// 	.mission {
-		// 		padding: 5em 0;
-		// 		.title {
-		// 			color: white;
-		// 			margin: 0 0 .2em 0;
-		// 			font-size: 3em;
-		// 			@media #{$large} {
-		// 				font-size: 3.3em;
-		// 			}
-		// 		}
-		// 		.subtitle {
-		// 			text-align: justify;
-		// 			font-style: italic;
-		// 			line-height: 2;
-		// 			color: white;
-		// 			text-transform: none;
-		// 		}
-		// 	}
-		// }
 		&.blog {
+			article {
+				margin-bottom: 3em;
+			}
+		}
+		&.page, &.blog {
 			.banner {
 				max-height: 150px;
 				padding: .5em 0;
@@ -264,7 +247,7 @@ body {
 				line-height: 3.2;
 			}
 			@media #{$medium} {
-				line-height: 3;
+				line-height: 2.8;
 			}
 			@media #{$large} {
 				font-size: 2.4;

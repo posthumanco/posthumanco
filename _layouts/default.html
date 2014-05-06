@@ -19,7 +19,7 @@
         <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.ico" type="image/x-icon">
     </head>
     <body>
-      <div class="page-wrap{% if url == site.baseurl %} index{% endif %}">
+      <div class="page-wrap{% if page.active == "root" %} index{% endif %}">
         <div class="row full-width collapse nav"><!--nav wrapper-->
           <div class="screen-12 columns">
             <header id="header">
@@ -28,12 +28,12 @@
                 <div class="screen-11 screen-centered columns">
                   <nav>
                     <ul class="left">
-                      <li class="logo"><a href="{{ site.baseurl }}"><i class="ph-posthuman_text"></i></a></li>
+                      <li class="logo"><a href="{{ site.baseurl }}"><i class="ph-posthuman_text"><h1>Posthuman</h1></i></a></li>
                     </ul>
                     <ul class="pages">
                         <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="{{ site.baseurl }}/tags">Work</a></li>
+                        <li><a href="{{ site.baseurl }}/about">About</a></li>
+                        <li><a href="#">Work</a></li>
                         <li><a href="#">Store</a></li>
                     </ul>
                   </nav>
