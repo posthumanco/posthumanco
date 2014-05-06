@@ -19,7 +19,7 @@
         <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.ico" type="image/x-icon">
     </head>
     <body>
-      <div class="page-wrap">
+      <div class="page-wrap{% if url == site.baseurl %} index{% endif %}">
         <div class="row full-width collapse nav"><!--nav wrapper-->
           <div class="screen-12 columns">
             <header id="header">
