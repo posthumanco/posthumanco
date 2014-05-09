@@ -1306,6 +1306,8 @@ body {
         background: white; }
       body .content article footer a:last-child:after {
         content: ""; }
+    body .content article footer p:last-child {
+      margin-bottom: 0; }
   body .content.blog article {
     margin-bottom: 3em; }
   body .content.page .banner, body .content.blog .banner {
