@@ -206,6 +206,11 @@ body {
 						content: "";
 					}
 				}
+				p {
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
 			}
 		}
 		&.blog {
@@ -215,10 +220,11 @@ body {
 		}
 		&.page, &.blog {
 			.banner {
+				background: $primary;
 				max-height: 150px;
 				padding: .5em 0;
 				&:before {
-					background-image: none;	
+					background: none;	
 				}
 				@media #{$medium} {
 					max-height: 300px;	
@@ -283,6 +289,10 @@ body {
 	background-position: center center;
 	background-size: cover;
 	position: relative;
+	@media #{$medium} {
+		height: auto;
+		min-height: 200px;
+	}
 	&:before {
 		content: '';
 		@include background-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
@@ -300,10 +310,6 @@ body {
 		@media #{$medium} {
 			height: 270px;
 		}
-	}
-	@media #{$medium} {
-		height: auto;
-		min-height: 200px;
 	}
 	header {
 		padding: 0 2%;
@@ -374,4 +380,10 @@ ul.tags {
 	padding: 0 10%;
 	background: url(http://i.imgur.com/zB98Tca.gif) center center no-repeat;
 	background-size: cover;
+}
+
+#disqus_thread {
+	border-top: 1px solid #d6d6d6;
+	margin-top: 1em;
+	padding-top: 1em;
 }
