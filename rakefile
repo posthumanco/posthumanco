@@ -5,6 +5,7 @@ require 'rubygems'
     require 'yaml'
     require 'tmpdir'
     require 'jekyll'
+    require 'sass'
 
     desc "Generate blog files"
     task :generate do
