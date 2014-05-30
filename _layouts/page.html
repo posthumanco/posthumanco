@@ -1,21 +1,18 @@
 ---
 layout: default
-title: Tags
 ---
 
-<div class="content blog">
+<div class="content page">
 	<div class="row collapse banner fixed" {% if banner!= "null" %}style="background-image:url({{ site.baseurl }}{{ page.banner }});"{% endif %}>
 		<div class="screen-12 columns">
 			<object data="{{ site.baseurl }}/assets/svg/pheye-live.svg" type="image/svg+xml" class="pheye">
 			</object>
-			<header class="text-center"><h1 class="title">Tags</h1></header>
+			<header class="text-center"><h1 class="page-title">{{ page.title }}</h1></header>
 		</div>
 	</div>
 	<div class="row">
 		{% include content-columns.html %}
-			<ul class="tags">
-				{% for tag in site.tags | sort:ascending %}<li><a href="{{ site.baseurl }}/tag/{{ tag[0] }}">{{ tag[0] }}</a> <span> - {{ tag[1].size }} post{% if tag[1].size != 1 %}s{% endif %}</span></li>{% endfor %}
-			</ul>
+			{{ page.content }}
 		</div>
 	</div>
 </div>
