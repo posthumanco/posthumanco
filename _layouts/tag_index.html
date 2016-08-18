@@ -4,7 +4,7 @@ title: Tags
 ---
 
 <div class="content blog">
-	<div class="row collapse banner fixed" {% if banner!= "null" %}style="background-image:url({{ site.baseurl }}{{ page.banner }});"{% endif %}>
+	<div class="row collapse banner fixed" {% if banner != "null" %}style="background-image:url({{ site.baseurl }}{{ page.banner }});"{% endif %}>
 		<div class="screen-12 columns">
 			<object data="{{ site.baseurl }}/assets/svg/pheye-live.svg" type="image/svg+xml" class="pheye">
 			</object>
@@ -14,7 +14,7 @@ title: Tags
 	<div class="row">
 		{% include content-columns.html %}
 			<ul class="tags">
-				{% for tag in site.tags | sort:ascending %}<li><a href="{{ site.baseurl }}/tag/{{ tag[0] }}">{{ tag[0] }}</a> <span> - {{ tag[1].size }} post{% if tag[1].size != 1 %}s{% endif %}</span></li>{% endfor %}
+				{% for tag in site.tags %}<li><a href="{{ site.baseurl }}/tag/{{ tag[0] }}">{{ tag[0] }}</a> <span> - {{ tag[1].size }} post{% if tag[1].size != 1 %}s{% endif %}</span></li>{% endfor %}
 			</ul>
 		</div>
 	</div>

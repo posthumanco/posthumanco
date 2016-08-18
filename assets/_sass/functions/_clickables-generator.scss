@@ -1,0 +1,64 @@
+// THIS IS BAD. :(
+
+@mixin clickables() {
+	// generating other buttons
+	button, a.button, input[type=submit] {
+		background: $primary;
+		border: none;
+		padding: $button-padding;
+		font-size: $button-font-size;
+		display: inline-block;
+		border-radius: $border-radius;
+		color: white !important;
+		&:hover {
+			background: $primary-hover;
+		}
+		&.tiny {
+			padding: $button-padding;
+			font-size: $button-font-size - .3em;
+		}
+		&.small {
+			padding: $button-padding;
+			font-size: $button-font-size - .2em;
+		}
+		&.large {
+			padding: $button-padding + .4em;
+			font-size: $button-font-size + .2em;
+		}
+		&.expand {
+			width: 100%;
+		}
+		@each $type in $button-type {
+			&.#{nth($type, 1)} {
+				background: #{nth($type, 2)};
+				&:hover {
+					background: #{nth($type, 3)};
+				}
+			}
+		}
+	}
+	a {
+		color: $primary;
+		text-decoration: none;
+		background-image: linear-gradient(to top, rgba(0,0,0,0) 12%, rgba(0,0,0,1) 12%, rgba(0,0,0,1) 16%, rgba(0,0,0,0) 16%);
+		font-family: $content-font-family;
+		font-size: $content-font-size;
+		font-weight: 400;
+		&:visited {
+			color: $primary;
+		}
+		&:hover {
+			color: $primary-hover;
+		}
+		@each $type in $button-type {
+			&.#{nth($type, 1)} {
+				color: #{nth($type, 2)};
+				&:hover {
+					color: #{nth($type, 3)};
+				}
+			}
+		}
+	}
+}
+
+@include clickables;

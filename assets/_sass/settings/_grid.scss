@@ -1,6 +1,6 @@
 $total-columns: 12 !default;
 $column-gutter: 2% !default;
-$max-row-width: 1224px !default;
+$max-row-width: 100% !default;
 
 $screen: "only screen" !default;
 $small: "only screen and (min-width: 600px)" !default;
@@ -120,11 +120,11 @@ $extra-large: "only screen and (min-width: 1300px)" !default;
 @include columns(pull);
 
 @media #{$screen} {
-	@include columns(screen);	
+	@include columns(screen);
 }
 
 @media #{$small} {
-	@include columns(small);	
+	@include columns(small);
 }
 
 @media #{$medium} {

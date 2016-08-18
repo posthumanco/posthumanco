@@ -1,0 +1,8 @@
+img {
+	&.fluid-image {
+		max-width: 100%;
+	}
+  &.full-width {
+    width: 100%;
+  }
+}

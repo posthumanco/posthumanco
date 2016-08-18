@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////
+// Nav Defaults
+//////////////////////////////////////////////////
+
+nav {
+	ul {
+		margin: 0;
+		li {
+			display: block;
+			@media #{$medium} {
+				display: inline-block;
+			}
+			a {
+				font-weight: $content-font-weight;
+				background-image: none;
+			}
+		}
+	}
+}

@@ -1,12 +1,8 @@
 name: Posthuman
-baseurl: http://posthuman.co
-markdown: redcarpet
-pygments: true
-# highlighter: pygments
+baseurl: #http://posthuman.co
+highlighter: true
 permalink: blog/:title
-paginate: 2
-paginate_path: "blog/page:num"
-# sass:
-#     sass_dir: assets/css
+sass:
+  sass_dir: assets/_sass
 
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']

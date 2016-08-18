@@ -1,0 +1,47 @@
+// em Reset, Font Families
+body {
+	font-size: $em-reset-screen;
+	@media #{$small} {
+		font-size: $em-reset-small;
+	}
+	@media #{$medium} {
+		font-size: $em-reset-medium;
+	}
+	@media #{$large} {
+		font-size: $em-reset-large;
+	}
+	@media #{$extra-large} {
+		font-size: $em-reset-extra-large;
+	}
+}
+
+p, ul, ol, dl {
+	margin: $p-margin;
+	font-family: $content-font-family;
+	font-size: $content-font-size;
+	font-weight: $content-font-weight;
+	line-height: $line-height;
+}
+
+blockquote {
+	padding-left: 10px;
+	border-left: 5px solid $disabled;
+}
+
+cite {
+	font-style: italic;
+	font-size: .8em;
+	display: block;
+	margin-top: 1em;
+	&:before {
+		content: "\2014 \0020"
+	}
+}
+
+i {
+	font-style: italic;
+}
+
+strong {
+	font-weight: $h-font-weight;
+}

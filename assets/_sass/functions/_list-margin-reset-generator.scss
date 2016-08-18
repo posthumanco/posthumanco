@@ -1,0 +1,9 @@
+@mixin child-list-margin-reset {
+	@each $list-type in ul, ol, dl {
+		#{$list-type} {
+			@extend #{$list-type};
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+	}
+}

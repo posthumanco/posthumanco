@@ -1,16 +1,9 @@
 @mixin transition($duration: 0.5s) {
 	transition: color $duration, height $duration, transform $duration;
-		-webkit-transition: color $duration, height $duration, -webkit-transform $duration;
-		-moz-transition: color $duration, height $duration, -moz-transform $duration;
 }
 @mixin background-gradient($primarycolor, $secondarycolor ) {
 	background: $primarycolor;
-	background-image: -webkit-gradient(linear, left top, left bottom, from($primarycolor), to($secondarycolor, $primarycolor)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient(top, $primarycolor, $secondarycolor); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient(top, $primarycolor, $secondarycolor); /* FF3.6+ */
-	background-image:     -ms-linear-gradient(top, $primarycolor, $secondarycolor); /* IE10 */
-	background-image:      -o-linear-gradient(top, $primarycolor, $secondarycolor); /* Opera 11.10+ */
-	background-image:         linear-gradient(to bottom, $primarycolor, $secondarycolor); /* W3C */
+	background-image: linear-gradient(to bottom, $primarycolor, $secondarycolor); /* W3C */
 }
 $footer-height: 50px;
 html, body {
@@ -72,7 +65,7 @@ body {
 					background: none;
 				}
 				@media #{$medium} {
-					max-height: 350px;	
+					max-height: 350px;
 				}
 			}
 			.mission {
@@ -225,10 +218,10 @@ body {
 				max-height: 150px;
 				padding: .5em 0;
 				&:before {
-					background: none;	
+					background: none;
 				}
 				@media #{$medium} {
-					max-height: 300px;	
+					max-height: 300px;
 				}
 			}
 			.h1 {
@@ -307,7 +300,8 @@ body {
 	.pheye {
 		height: 70px;
 		margin: 0 auto;
-		width: 100%;
+		max-width: 100%;
+    width: 100%;
 		@media #{$medium} {
 			height: 180px;
 		}
@@ -322,8 +316,8 @@ body {
 			font-weight: 500;
 			line-height: 1;
 			&.page-title {
-				
-				
+
+
 			}
 		}
 	}

@@ -1,25 +1,12 @@
 ---
 layout: default
 title: Posthuman
-banner: 
+banner:
 active: root
 ---
 
-<div class="content index">
-	<div class="row collapse banner fixed" {% if banner!= "null" %}style="background-image:url({{ site.baseurl }}{{ page.banner }});"{% endif %}>
-		<div class="screen-12 columns">
-			{% include eye.html %}
-		</div>
-	</div>
-	<div class="row mission text-center">
-		{% include content-columns.html %}
-			<h2 class="h1 title">Be More <br>Than You Are</h2>
-			<h1 class="h4 subtitle">Posthuman is a group of freelance designers &amp; developers devoted to pushing the limits of their craft. We want to help create client products that evolve their business, and share our cumulative knowledge with the community of our peers.</h1>
-		</div>
-	</div>
-	<div class="row text-center">
-		{% include content-columns.html %}
-			
-		</div>
-	</div>
+{% include eye.html %}
+<div class="content">
+  <h2 class="h1 title">Be More</h2>
+  <h1 class="h4 subtitle">Posthuman is a design and development organization with the intent of re-thinking user interaction on the web while pushing boundaries of web technology in a way that is accessible and comfortable.</h1>
 </div>

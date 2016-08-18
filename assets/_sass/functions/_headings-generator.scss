@@ -1,0 +1,21 @@
+@mixin h-elements {
+	@for $i from 1 through 6 {
+		.h#{$i} {
+			color: $h-font-color;
+			font-family: $h-font-family;
+			font-size: $h-font-size - ($i * .2);
+			font-weight: $h-font-weight;
+			margin: $h-margin;
+			line-height: 1.2em;
+			a {
+				font-weight: $h-font-weight;
+			}
+			small {
+				font-size: $h-font-size - ($i * 1.4);
+				display: block;
+			}
+		}
+	}
+}
+
+@include h-elements;

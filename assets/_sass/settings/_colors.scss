@@ -1,0 +1,12 @@
+//////////////////////////////////////////////////
+// Colors
+//////////////////////////////////////////////////
+
+$primary: rgb(26, 26, 26) !default;
+	$primary-hover: lighten($primary, 50%) !default;
+$secondary: rgb(0, 237, 122) !default;
+	$secondary-hover: darken($secondary, 10%) !default;
+$disabled: rgb(241, 241, 241) !default;
+	$disabled-hover: darken($disabled, 2%) !default;
+$alert: rgb(255, 54, 42) !default;
+	$alert-hover: darken($alert, 10%) !default;

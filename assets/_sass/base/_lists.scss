@@ -1,0 +1,30 @@
+ul {
+	margin: $ul-margin;
+	line-height: 0;
+	li {
+		line-height: $line-height;
+		list-style-type: disc;
+		@include child-list-margin-reset;
+	}
+}
+ol {
+	margin: $ol-margin;
+	line-height: 0;
+	li {
+		line-height: $line-height;
+		list-style-type: decimal;
+		@include child-list-margin-reset;
+	}
+}
+dl {
+	margin: $dl-margin;
+	line-height: 0;
+	dd {
+		margin-left: 1em;
+		line-height: $line-height;
+		&:before {
+			content: "- ";
+
+		}
+	}
+}

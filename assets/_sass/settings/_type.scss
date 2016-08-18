@@ -1,0 +1,26 @@
+//////////////////////////////////////////////////
+// Typography
+//////////////////////////////////////////////////
+
+// em Resets
+$em-reset-screen: 18px !default;
+$em-reset-small: 19px !default;
+$em-reset-medium: 20px !default;
+$em-reset-large: 22px !default;
+$em-reset-extra-large: 24px !default;
+
+// Font Families
+$h-font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$content-font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+// Font Sizes
+$h-font-color: $primary;
+$h-font-size: 1.8em !default;
+$h-font-weight: 400 !default;
+$content-font-size: 1em !default;
+$content-font-weight: 300 !default;
+
+// Line Heights & Element Margins
+$line-height: 1.5 !default;
+$p-margin: 0 0 1.5em 0 !default;
+$h-margin: 0 0 1.1em 0 !default;

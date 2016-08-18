@@ -13,13 +13,13 @@ banner: /assets/images/IMG_6588.jpg
 			<header class="text-center"><h1 class="page-title">{{ page.title }}</h1></header>
 		</div>
 	</div>
-	{% for post in paginator.posts %}
+	{% for post in site.posts %}
 		<article>
 			{% include content-columns.html %}
 		  		<header>
 		  			<h2 class="h1"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 		  				<small>
-		  					<span class="author"><a href="http://www.twitter.com/{{ post.twitterhandle }}">Dustin Armstrong</a></span> | 
+		  					<span class="author"><a href="http://www.twitter.com/{{ post.twitterhandle }}">Dustin Armstrong</a></span> |
 		  					<time pubdate="pubdate">{{ post.date | date_to_string }}</time>
 		  				</small>
 		  			</h2>
@@ -31,9 +31,4 @@ banner: /assets/images/IMG_6588.jpg
 		  	</div>
 	  	</article>
 	{% endfor %}
-	<div class="row">
-		<div class="screen-11 screen-centered small-8 small-centered medium-7 medium-centered large-6 large-centered extra-large-5 extra-large-centered columns">
-			{% include pagination.html %}
-		</div>
-	</div>
 </div>
